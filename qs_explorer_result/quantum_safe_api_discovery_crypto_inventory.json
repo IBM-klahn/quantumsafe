@@ -1,0 +1,2704 @@
+{
+  "scanId": "6888c145025748c3b0e0f6e560db6f8e",
+  "applicationId": " ",
+  "applicationVersion": " ",
+  "scanTime": "2026-11-03T21:25:57.297649Z",
+  "totalCryptoArtifacts": "361",
+  "metadata": {
+    "provider": {
+      "name": "IBM Quantum Safe Explorer",
+      "version": "2.3.3.1"
+    },
+    "properties": []
+  },
+  "findings": [
+    {
+      "fileType": "Go",
+      "children": [
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+          "cryptoArtifacts": 16,
+          "cryptoInfo": [
+            {
+              "functionName": "crypto.rsa.GenerateKey",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 60,
+                  "startColumn": 25,
+                  "endColumn": 36
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.sha256.Sum256",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 66,
+                  "startColumn": 19,
+                  "endColumn": 25
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.rsa.SignPKCS1v15",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 67,
+                  "startColumn": 24,
+                  "endColumn": 36
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.sha1.Sum",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 323,
+                  "startColumn": 15,
+                  "endColumn": 18
+                },
+                {
+                  "line": 110,
+                  "startColumn": 15,
+                  "endColumn": 18
+                },
+                {
+                  "line": 158,
+                  "startColumn": 15,
+                  "endColumn": 18
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.md5.Sum",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 338,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 261,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 304,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 52,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 152,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 134,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 166,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 317,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 104,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 186,
+                  "startColumn": 14,
+                  "endColumn": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+          "cryptoArtifacts": 32,
+          "cryptoInfo": [
+            {
+              "functionName": "crypto.md5.Sum",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 50,
+                  "startColumn": 14,
+                  "endColumn": 17
+                },
+                {
+                  "line": 38,
+                  "startColumn": 14,
+                  "endColumn": 17
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.sha1.Sum",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 56,
+                  "startColumn": 15,
+                  "endColumn": 18
+                },
+                {
+                  "line": 44,
+                  "startColumn": 15,
+                  "endColumn": 18
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.des.NewCipher",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 66,
+                  "startColumn": 20,
+                  "endColumn": 29
+                },
+                {
+                  "line": 304,
+                  "startColumn": 20,
+                  "endColumn": 29
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.des.NewTripleDESCipher",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 82,
+                  "startColumn": 20,
+                  "endColumn": 38
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.rc4.NewCipher",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 98,
+                  "startColumn": 21,
+                  "endColumn": 30
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.aes.NewCipher",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 111,
+                  "startColumn": 20,
+                  "endColumn": 29
+                },
+                {
+                  "line": 127,
+                  "startColumn": 20,
+                  "endColumn": 29
+                },
+                {
+                  "line": 256,
+                  "startColumn": 20,
+                  "endColumn": 29
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.cipher.Block.Encrypt",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 119,
+                  "startColumn": 9,
+                  "endColumn": 16
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.cipher.NewCFBEncrypter",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 134,
+                  "startColumn": 19,
+                  "endColumn": 34
+                },
+                {
+                  "line": 261,
+                  "startColumn": 19,
+                  "endColumn": 34
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.cipher.Stream.XORKeyStream",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 137,
+                  "startColumn": 9,
+                  "endColumn": 21
+                },
+                {
+                  "line": 263,
+                  "startColumn": 9,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.rsa.GenerateKey",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 153,
+                  "startColumn": 13,
+                  "endColumn": 24
+                },
+                {
+                  "line": 275,
+                  "startColumn": 25,
+                  "endColumn": 36
+                },
+                {
+                  "line": 158,
+                  "startColumn": 13,
+                  "endColumn": 24
+                },
+                {
+                  "line": 148,
+                  "startColumn": 13,
+                  "endColumn": 24
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.rsa.SignPKCS1v15",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 164,
+                  "startColumn": 24,
+                  "endColumn": 36
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.dsa.GenerateParameters",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 175,
+                  "startColumn": 16,
+                  "endColumn": 34
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.dsa.GenerateKey",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 181,
+                  "startColumn": 16,
+                  "endColumn": 27
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.sha256.Sum256",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 190,
+                  "startColumn": 19,
+                  "endColumn": 25
+                },
+                {
+                  "line": 206,
+                  "startColumn": 19,
+                  "endColumn": 25
+                },
+                {
+                  "line": 163,
+                  "startColumn": 19,
+                  "endColumn": 25
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.dsa.Sign",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 191,
+                  "startColumn": 13,
+                  "endColumn": 17
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.elliptic.P256",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 196,
+                  "startColumn": 36,
+                  "endColumn": 40
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.ecdsa.GenerateKey",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 201,
+                  "startColumn": 15,
+                  "endColumn": 26
+                },
+                {
+                  "line": 196,
+                  "startColumn": 15,
+                  "endColumn": 26
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.elliptic.P384",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 201,
+                  "startColumn": 36,
+                  "endColumn": 40
+                }
+              ]
+            },
+            {
+              "functionName": "crypto.ecdsa.Sign",
+              "library": "crypto",
+              "locations": [
+                {
+                  "line": 207,
+                  "startColumn": 15,
+                  "endColumn": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileType": "cpp",
+      "children": [
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+          "cryptoArtifacts": 45,
+          "cryptoInfo": [
+            {
+              "functionName": "MD5",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 31,
+                  "startColumn": 5,
+                  "endColumn": 8
+                },
+                {
+                  "line": 57,
+                  "startColumn": 5,
+                  "endColumn": 8
+                }
+              ]
+            },
+            {
+              "functionName": "SHA1",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 44,
+                  "startColumn": 5,
+                  "endColumn": 9
+                }
+              ]
+            },
+            {
+              "functionName": "DES_set_key_unchecked",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 76,
+                  "startColumn": 5,
+                  "endColumn": 26
+                },
+                {
+                  "line": 101,
+                  "startColumn": 5,
+                  "endColumn": 26
+                },
+                {
+                  "line": 103,
+                  "startColumn": 5,
+                  "endColumn": 26
+                },
+                {
+                  "line": 102,
+                  "startColumn": 5,
+                  "endColumn": 26
+                },
+                {
+                  "line": 404,
+                  "startColumn": 5,
+                  "endColumn": 26
+                }
+              ]
+            },
+            {
+              "functionName": "DES_ecb_encrypt",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 83,
+                  "startColumn": 5,
+                  "endColumn": 20
+                },
+                {
+                  "line": 410,
+                  "startColumn": 5,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "DES_ecb3_encrypt",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 110,
+                  "startColumn": 5,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "RC4_set_key",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 125,
+                  "startColumn": 5,
+                  "endColumn": 16
+                }
+              ]
+            },
+            {
+              "functionName": "RC4",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 128,
+                  "startColumn": 5,
+                  "endColumn": 8
+                }
+              ]
+            },
+            {
+              "functionName": "EVP_EncryptInit_ex",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 146,
+                  "startColumn": 5,
+                  "endColumn": 23
+                },
+                {
+                  "line": 174,
+                  "startColumn": 5,
+                  "endColumn": 23
+                },
+                {
+                  "line": 343,
+                  "startColumn": 5,
+                  "endColumn": 23
+                }
+              ]
+            },
+            {
+              "functionName": "EVP_aes_128_ecb",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 146,
+                  "startColumn": 29,
+                  "endColumn": 44
+                }
+              ]
+            },
+            {
+              "functionName": "RSA_size",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 208,
+                  "startColumn": 47,
+                  "endColumn": 55
+                },
+                {
+                  "line": 225,
+                  "startColumn": 48,
+                  "endColumn": 56
+                },
+                {
+                  "line": 242,
+                  "startColumn": 48,
+                  "endColumn": 56
+                }
+              ]
+            },
+            {
+              "functionName": "RSA_new",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 235,
+                  "startColumn": 16,
+                  "endColumn": 23
+                },
+                {
+                  "line": 218,
+                  "startColumn": 16,
+                  "endColumn": 23
+                },
+                {
+                  "line": 201,
+                  "startColumn": 16,
+                  "endColumn": 23
+                },
+                {
+                  "line": 370,
+                  "startColumn": 16,
+                  "endColumn": 23
+                }
+              ]
+            },
+            {
+              "functionName": "RSA_generate_key_ex",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 240,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 223,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 206,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 375,
+                  "startColumn": 5,
+                  "endColumn": 24
+                }
+              ]
+            },
+            {
+              "functionName": "DSA_new",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 252,
+                  "startColumn": 16,
+                  "endColumn": 23
+                }
+              ]
+            },
+            {
+              "functionName": "DSA_generate_parameters_ex",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 255,
+                  "startColumn": 5,
+                  "endColumn": 31
+                }
+              ]
+            },
+            {
+              "functionName": "DSA_generate_key",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 256,
+                  "startColumn": 5,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "DSA_free",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 260,
+                  "startColumn": 5,
+                  "endColumn": 13
+                }
+              ]
+            },
+            {
+              "functionName": "EC_KEY_generate_key",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 268,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 280,
+                  "startColumn": 5,
+                  "endColumn": 24
+                }
+              ]
+            },
+            {
+              "functionName": "EVP_CIPHER_CTX_new",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 342,
+                  "startColumn": 27,
+                  "endColumn": 45
+                },
+                {
+                  "line": 144,
+                  "startColumn": 27,
+                  "endColumn": 45
+                },
+                {
+                  "line": 173,
+                  "startColumn": 27,
+                  "endColumn": 45
+                }
+              ]
+            },
+            {
+              "functionName": "EVP_aes_128_cbc",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 343,
+                  "startColumn": 29,
+                  "endColumn": 44
+                },
+                {
+                  "line": 174,
+                  "startColumn": 29,
+                  "endColumn": 44
+                }
+              ]
+            },
+            {
+              "functionName": "EVP_EncryptFinal_ex",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 351,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 182,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 154,
+                  "startColumn": 5,
+                  "endColumn": 24
+                }
+              ]
+            },
+            {
+              "functionName": "EVP_CIPHER_CTX_free",
+              "library": "openSSL",
+              "locations": [
+                {
+                  "line": 354,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 185,
+                  "startColumn": 5,
+                  "endColumn": 24
+                },
+                {
+                  "line": 157,
+                  "startColumn": 5,
+                  "endColumn": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileType": "C#",
+      "children": [
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+          "cryptoArtifacts": 21,
+          "cryptoInfo": [
+            {
+              "functionName": "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 75,
+                  "startColumn": 55,
+                  "endColumn": 79
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.HMACMD5.HMACMD5",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 120,
+                  "startColumn": 39,
+                  "endColumn": 46
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.HMACSHA1.HMACSHA1",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 132,
+                  "startColumn": 40,
+                  "endColumn": 48
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.MD5.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 190,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 425,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 394,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 163,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 346,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 216,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 245,
+                  "startColumn": 34,
+                  "endColumn": 40
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.SHA1.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 202,
+                  "startColumn": 37,
+                  "endColumn": 43
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 397,
+                  "startColumn": 35,
+                  "endColumn": 46
+                },
+                {
+                  "line": 134,
+                  "startColumn": 36,
+                  "endColumn": 47
+                },
+                {
+                  "line": 348,
+                  "startColumn": 35,
+                  "endColumn": 46
+                },
+                {
+                  "line": 427,
+                  "startColumn": 35,
+                  "endColumn": 46
+                },
+                {
+                  "line": 204,
+                  "startColumn": 36,
+                  "endColumn": 47
+                },
+                {
+                  "line": 247,
+                  "startColumn": 35,
+                  "endColumn": 46
+                },
+                {
+                  "line": 122,
+                  "startColumn": 36,
+                  "endColumn": 47
+                },
+                {
+                  "line": 218,
+                  "startColumn": 35,
+                  "endColumn": 46
+                },
+                {
+                  "line": 192,
+                  "startColumn": 35,
+                  "endColumn": 46
+                },
+                {
+                  "line": 165,
+                  "startColumn": 35,
+                  "endColumn": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+          "cryptoArtifacts": 45,
+          "cryptoInfo": [
+            {
+              "functionName": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 40,
+                  "startColumn": 36,
+                  "endColumn": 47
+                },
+                {
+                  "line": 28,
+                  "startColumn": 35,
+                  "endColumn": 46
+                },
+                {
+                  "line": 370,
+                  "startColumn": 36,
+                  "endColumn": 47
+                },
+                {
+                  "line": 64,
+                  "startColumn": 36,
+                  "endColumn": 47
+                },
+                {
+                  "line": 382,
+                  "startColumn": 36,
+                  "endColumn": 47
+                },
+                {
+                  "line": 52,
+                  "startColumn": 35,
+                  "endColumn": 46
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.MD5.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 50,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 26,
+                  "startColumn": 34,
+                  "endColumn": 40
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.SHA1.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 62,
+                  "startColumn": 37,
+                  "endColumn": 43
+                },
+                {
+                  "line": 38,
+                  "startColumn": 37,
+                  "endColumn": 43
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 84,
+                  "startColumn": 57,
+                  "endColumn": 72
+                },
+                {
+                  "line": 104,
+                  "startColumn": 63,
+                  "endColumn": 78
+                },
+                {
+                  "line": 166,
+                  "startColumn": 57,
+                  "endColumn": 72
+                },
+                {
+                  "line": 124,
+                  "startColumn": 57,
+                  "endColumn": 72
+                },
+                {
+                  "line": 321,
+                  "startColumn": 57,
+                  "endColumn": 72
+                },
+                {
+                  "line": 144,
+                  "startColumn": 57,
+                  "endColumn": 72
+                },
+                {
+                  "line": 412,
+                  "startColumn": 57,
+                  "endColumn": 72
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.TripleDES.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 98,
+                  "startColumn": 52,
+                  "endColumn": 58
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.RC2.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 118,
+                  "startColumn": 34,
+                  "endColumn": 40
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 127,
+                  "startColumn": 51,
+                  "endColumn": 70
+                },
+                {
+                  "line": 324,
+                  "startColumn": 51,
+                  "endColumn": 70
+                },
+                {
+                  "line": 147,
+                  "startColumn": 51,
+                  "endColumn": 70
+                },
+                {
+                  "line": 415,
+                  "startColumn": 51,
+                  "endColumn": 70
+                },
+                {
+                  "line": 87,
+                  "startColumn": 51,
+                  "endColumn": 70
+                },
+                {
+                  "line": 169,
+                  "startColumn": 51,
+                  "endColumn": 70
+                },
+                {
+                  "line": 107,
+                  "startColumn": 51,
+                  "endColumn": 70
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.Aes.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 158,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 314,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 138,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 339,
+                  "startColumn": 34,
+                  "endColumn": 40
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 202,
+                  "startColumn": 48,
+                  "endColumn": 72
+                },
+                {
+                  "line": 193,
+                  "startColumn": 48,
+                  "endColumn": 72
+                },
+                {
+                  "line": 184,
+                  "startColumn": 48,
+                  "endColumn": 72
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.RSA.SignData",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 212,
+                  "startColumn": 36,
+                  "endColumn": 44
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.DSACryptoServiceProvider.DSACryptoServiceProvider",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 221,
+                  "startColumn": 48,
+                  "endColumn": 72
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.DSA.SignData",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 231,
+                  "startColumn": 36,
+                  "endColumn": 44
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.ECDsaCng.ECDsaCng",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 240,
+                  "startColumn": 34,
+                  "endColumn": 42
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.ECDsa.SignData",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 250,
+                  "startColumn": 38,
+                  "endColumn": 46
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.SymmetricAlgorithm.GenerateKey",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 342,
+                  "startColumn": 21,
+                  "endColumn": 32
+                },
+                {
+                  "line": 354,
+                  "startColumn": 21,
+                  "endColumn": 32
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.DES.Create",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 352,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 78,
+                  "startColumn": 34,
+                  "endColumn": 40
+                },
+                {
+                  "line": 406,
+                  "startColumn": 34,
+                  "endColumn": 40
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.HMACMD5.HMACMD5",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 368,
+                  "startColumn": 39,
+                  "endColumn": 46
+                }
+              ]
+            },
+            {
+              "functionName": "System.Security.Cryptography.HMACSHA1.HMACSHA1",
+              "library": "Cryptography",
+              "locations": [
+                {
+                  "line": 380,
+                  "startColumn": 40,
+                  "endColumn": 48
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileType": "kotlin"
+    },
+    {
+      "fileType": "nodejs"
+    },
+    {
+      "fileType": "java",
+      "children": [
+        {
+          "fileName": "qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+          "cryptoArtifacts": 62,
+          "cryptoInfo": [
+            {
+              "functionName": "java.security.MessageDigest.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 23,
+                  "startColumn": 42,
+                  "endColumn": 53
+                },
+                {
+                  "line": 30,
+                  "startColumn": 42,
+                  "endColumn": 53
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.MessageDigest.digest",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 31,
+                  "startColumn": 26,
+                  "endColumn": 32
+                },
+                {
+                  "line": 24,
+                  "startColumn": 26,
+                  "endColumn": 32
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.spec.SecretKeySpec.SecretKeySpec",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 37,
+                  "startColumn": 39,
+                  "endColumn": 52
+                },
+                {
+                  "line": 45,
+                  "startColumn": 39,
+                  "endColumn": 52
+                },
+                {
+                  "line": 111,
+                  "startColumn": 39,
+                  "endColumn": 52
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.Cipher.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 38,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 137,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 60,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 123,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 112,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 144,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 46,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 130,
+                  "startColumn": 32,
+                  "endColumn": 43
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.SecureRandom.SecureRandom",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 48,
+                  "startColumn": 13,
+                  "endColumn": 25
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.SecureRandom.nextBytes",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 48,
+                  "startColumn": 28,
+                  "endColumn": 37
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.KeyGenerator.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 56,
+                  "startColumn": 44,
+                  "endColumn": 55
+                },
+                {
+                  "line": 119,
+                  "startColumn": 44,
+                  "endColumn": 55
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.Cipher.init",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 61,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 50,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 131,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 147,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 113,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 39,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 124,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 138,
+                  "startColumn": 16,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.KeyPairGenerator.generateKeyPair",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 69,
+                  "startColumn": 23,
+                  "endColumn": 38
+                },
+                {
+                  "line": 91,
+                  "startColumn": 23,
+                  "endColumn": 38
+                },
+                {
+                  "line": 106,
+                  "startColumn": 23,
+                  "endColumn": 38
+                },
+                {
+                  "line": 76,
+                  "startColumn": 23,
+                  "endColumn": 38
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.Signature.sign",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 84,
+                  "startColumn": 26,
+                  "endColumn": 30
+                },
+                {
+                  "line": 99,
+                  "startColumn": 26,
+                  "endColumn": 30
+                },
+                {
+                  "line": 156,
+                  "startColumn": 26,
+                  "endColumn": 30
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.KeyPairGenerator.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 104,
+                  "startColumn": 52,
+                  "endColumn": 63
+                },
+                {
+                  "line": 89,
+                  "startColumn": 52,
+                  "endColumn": 63
+                },
+                {
+                  "line": 74,
+                  "startColumn": 52,
+                  "endColumn": 63
+                },
+                {
+                  "line": 67,
+                  "startColumn": 52,
+                  "endColumn": 63
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.KeyPairGenerator.initialize",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 105,
+                  "startColumn": 16,
+                  "endColumn": 26
+                },
+                {
+                  "line": 90,
+                  "startColumn": 16,
+                  "endColumn": 26
+                },
+                {
+                  "line": 75,
+                  "startColumn": 16,
+                  "endColumn": 26
+                },
+                {
+                  "line": 68,
+                  "startColumn": 16,
+                  "endColumn": 26
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.KeyGenerator.init",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 120,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 57,
+                  "startColumn": 16,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.KeyGenerator.generateKey",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 121,
+                  "startColumn": 38,
+                  "endColumn": 49
+                },
+                {
+                  "line": 58,
+                  "startColumn": 38,
+                  "endColumn": 49
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.Cipher.doFinal",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 125,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 139,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 62,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 51,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 132,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 148,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 114,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 40,
+                  "startColumn": 23,
+                  "endColumn": 30
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.spec.IvParameterSpec.IvParameterSpec",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 146,
+                  "startColumn": 38,
+                  "endColumn": 53
+                },
+                {
+                  "line": 49,
+                  "startColumn": 38,
+                  "endColumn": 53
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.Signature.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 153,
+                  "startColumn": 41,
+                  "endColumn": 52
+                },
+                {
+                  "line": 81,
+                  "startColumn": 41,
+                  "endColumn": 52
+                },
+                {
+                  "line": 96,
+                  "startColumn": 41,
+                  "endColumn": 52
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.Signature.initSign",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 154,
+                  "startColumn": 19,
+                  "endColumn": 27
+                },
+                {
+                  "line": 82,
+                  "startColumn": 19,
+                  "endColumn": 27
+                },
+                {
+                  "line": 97,
+                  "startColumn": 19,
+                  "endColumn": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+          "cryptoArtifacts": 76,
+          "cryptoInfo": [
+            {
+              "functionName": "java.security.MessageDigest.digest",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 33,
+                  "startColumn": 26,
+                  "endColumn": 32
+                },
+                {
+                  "line": 42,
+                  "startColumn": 26,
+                  "endColumn": 32
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.MessageDigest.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 41,
+                  "startColumn": 42,
+                  "endColumn": 53
+                },
+                {
+                  "line": 32,
+                  "startColumn": 42,
+                  "endColumn": 53
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.Cipher.init",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 62,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 174,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 323,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 52,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 200,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 85,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 72,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 165,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 213,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 156,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 187,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 311,
+                  "startColumn": 16,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.spec.SecretKeySpec.SecretKeySpec",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 70,
+                  "startColumn": 37,
+                  "endColumn": 50
+                },
+                {
+                  "line": 309,
+                  "startColumn": 37,
+                  "endColumn": 50
+                },
+                {
+                  "line": 321,
+                  "startColumn": 37,
+                  "endColumn": 50
+                },
+                {
+                  "line": 60,
+                  "startColumn": 37,
+                  "endColumn": 50
+                },
+                {
+                  "line": 50,
+                  "startColumn": 37,
+                  "endColumn": 50
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.Cipher.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 71,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 199,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 173,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 310,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 61,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 155,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 186,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 208,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 322,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 51,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 164,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 84,
+                  "startColumn": 32,
+                  "endColumn": 43
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.KeyGenerator.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 80,
+                  "startColumn": 44,
+                  "endColumn": 55
+                },
+                {
+                  "line": 115,
+                  "startColumn": 44,
+                  "endColumn": 55
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.KeyGenerator.init",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 81,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 116,
+                  "startColumn": 16,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.KeyGenerator.generateKey",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 82,
+                  "startColumn": 32,
+                  "endColumn": 43
+                },
+                {
+                  "line": 117,
+                  "startColumn": 23,
+                  "endColumn": 34
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.KeyPairGenerator.generateKeyPair",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 99,
+                  "startColumn": 23,
+                  "endColumn": 38
+                },
+                {
+                  "line": 135,
+                  "startColumn": 23,
+                  "endColumn": 38
+                },
+                {
+                  "line": 108,
+                  "startColumn": 23,
+                  "endColumn": 38
+                },
+                {
+                  "line": 144,
+                  "startColumn": 23,
+                  "endColumn": 38
+                },
+                {
+                  "line": 126,
+                  "startColumn": 23,
+                  "endColumn": 38
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.KeyPairGenerator.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 124,
+                  "startColumn": 52,
+                  "endColumn": 63
+                },
+                {
+                  "line": 106,
+                  "startColumn": 52,
+                  "endColumn": 63
+                },
+                {
+                  "line": 97,
+                  "startColumn": 52,
+                  "endColumn": 63
+                },
+                {
+                  "line": 142,
+                  "startColumn": 52,
+                  "endColumn": 63
+                },
+                {
+                  "line": 133,
+                  "startColumn": 52,
+                  "endColumn": 63
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.KeyPairGenerator.initialize",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 125,
+                  "startColumn": 16,
+                  "endColumn": 26
+                },
+                {
+                  "line": 107,
+                  "startColumn": 16,
+                  "endColumn": 26
+                },
+                {
+                  "line": 98,
+                  "startColumn": 16,
+                  "endColumn": 26
+                },
+                {
+                  "line": 143,
+                  "startColumn": 16,
+                  "endColumn": 26
+                },
+                {
+                  "line": 134,
+                  "startColumn": 16,
+                  "endColumn": 26
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.Cipher.doFinal",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 157,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 188,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 63,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 175,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 53,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 312,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 201,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 86,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 73,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 166,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 214,
+                  "startColumn": 23,
+                  "endColumn": 30
+                },
+                {
+                  "line": 324,
+                  "startColumn": 23,
+                  "endColumn": 30
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.spec.PBEKeySpec.PBEKeySpec",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 182,
+                  "startColumn": 34,
+                  "endColumn": 44
+                },
+                {
+                  "line": 195,
+                  "startColumn": 34,
+                  "endColumn": 44
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.SecretKeyFactory.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 183,
+                  "startColumn": 56,
+                  "endColumn": 67
+                },
+                {
+                  "line": 196,
+                  "startColumn": 56,
+                  "endColumn": 67
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.SecretKeyFactory.generateSecret",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 197,
+                  "startColumn": 36,
+                  "endColumn": 50
+                },
+                {
+                  "line": 184,
+                  "startColumn": 36,
+                  "endColumn": 50
+                }
+              ]
+            },
+            {
+              "functionName": "javax.crypto.spec.IvParameterSpec.IvParameterSpec",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 212,
+                  "startColumn": 38,
+                  "endColumn": 53
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.SecureRandom.getInstance",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 269,
+                  "startColumn": 44,
+                  "endColumn": 55
+                }
+              ]
+            },
+            {
+              "functionName": "java.security.SecureRandom.nextBytes",
+              "library": "JCA",
+              "locations": [
+                {
+                  "line": 271,
+                  "startColumn": 16,
+                  "endColumn": 25
+                },
+                {
+                  "line": 281,
+                  "startColumn": 22,
+                  "endColumn": 31
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileType": "py",
+      "children": [
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+          "cryptoArtifacts": 18,
+          "cryptoInfo": [
+            {
+              "functionName": "hashlib.md5",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 30,
+                  "startColumn": 24,
+                  "endColumn": 27
+                },
+                {
+                  "line": 276,
+                  "startColumn": 24,
+                  "endColumn": 27
+                },
+                {
+                  "line": 229,
+                  "startColumn": 24,
+                  "endColumn": 27
+                },
+                {
+                  "line": 201,
+                  "startColumn": 24,
+                  "endColumn": 27
+                },
+                {
+                  "line": 134,
+                  "startColumn": 24,
+                  "endColumn": 27
+                },
+                {
+                  "line": 187,
+                  "startColumn": 24,
+                  "endColumn": 27
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.sha1",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 36,
+                  "startColumn": 24,
+                  "endColumn": 28
+                }
+              ]
+            },
+            {
+              "functionName": "hmac.new",
+              "library": "hmac",
+              "locations": [
+                {
+                  "line": 65,
+                  "startColumn": 21,
+                  "endColumn": 24
+                },
+                {
+                  "line": 73,
+                  "startColumn": 21,
+                  "endColumn": 24
+                }
+              ]
+            },
+            {
+              "functionName": "hmac.HMAC.hexdigest",
+              "library": "hmac",
+              "locations": [
+                {
+                  "line": 77,
+                  "startColumn": 11,
+                  "endColumn": 20
+                },
+                {
+                  "line": 69,
+                  "startColumn": 11,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.hash.hexdigest",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 187,
+                  "startColumn": 43,
+                  "endColumn": 52
+                },
+                {
+                  "line": 201,
+                  "startColumn": 60,
+                  "endColumn": 69
+                },
+                {
+                  "line": 30,
+                  "startColumn": 58,
+                  "endColumn": 67
+                },
+                {
+                  "line": 276,
+                  "startColumn": 60,
+                  "endColumn": 69
+                },
+                {
+                  "line": 134,
+                  "startColumn": 59,
+                  "endColumn": 68
+                },
+                {
+                  "line": 36,
+                  "startColumn": 59,
+                  "endColumn": 68
+                },
+                {
+                  "line": 229,
+                  "startColumn": 42,
+                  "endColumn": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/ibm_quantum_platform_course/sample.py",
+          "cryptoArtifacts": 8,
+          "cryptoInfo": [
+            {
+              "functionName": "cryptography.hazmat.primitives.hashes.Hash",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 17,
+                  "startColumn": 16,
+                  "endColumn": 20
+                },
+                {
+                  "line": 18,
+                  "startColumn": 16,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.hashes.SHA256",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 17,
+                  "startColumn": 28,
+                  "endColumn": 34
+                },
+                {
+                  "line": 18,
+                  "startColumn": 28,
+                  "endColumn": 34
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.hashes.Hash.update",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 21,
+                  "startColumn": 7,
+                  "endColumn": 13
+                },
+                {
+                  "line": 22,
+                  "startColumn": 7,
+                  "endColumn": 13
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.hashes.Hash.finalize",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 25,
+                  "startColumn": 18,
+                  "endColumn": 26
+                },
+                {
+                  "line": 26,
+                  "startColumn": 18,
+                  "endColumn": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/klahn/Projects/qse_demo/qse-samples/sample_files/python_files/vulnerable_crypto.py",
+          "cryptoArtifacts": 38,
+          "cryptoInfo": [
+            {
+              "functionName": "hashlib.md5",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 42,
+                  "startColumn": 20,
+                  "endColumn": 23
+                },
+                {
+                  "line": 28,
+                  "startColumn": 24,
+                  "endColumn": 27
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.hash.hexdigest",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 42,
+                  "startColumn": 43,
+                  "endColumn": 52
+                },
+                {
+                  "line": 28,
+                  "startColumn": 43,
+                  "endColumn": 52
+                },
+                {
+                  "line": 48,
+                  "startColumn": 44,
+                  "endColumn": 53
+                },
+                {
+                  "line": 35,
+                  "startColumn": 45,
+                  "endColumn": 54
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.sha1",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 48,
+                  "startColumn": 20,
+                  "endColumn": 24
+                },
+                {
+                  "line": 35,
+                  "startColumn": 25,
+                  "endColumn": 29
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher.DES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 58,
+                  "startColumn": 18,
+                  "endColumn": 21
+                },
+                {
+                  "line": 265,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 60,
+                  "startColumn": 25,
+                  "endColumn": 32
+                },
+                {
+                  "line": 267,
+                  "startColumn": 25,
+                  "endColumn": 32
+                },
+                {
+                  "line": 96,
+                  "startColumn": 25,
+                  "endColumn": 32
+                },
+                {
+                  "line": 69,
+                  "startColumn": 25,
+                  "endColumn": 32
+                },
+                {
+                  "line": 86,
+                  "startColumn": 25,
+                  "endColumn": 32
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher.DES3.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 67,
+                  "startColumn": 19,
+                  "endColumn": 22
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher.ARC4.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 76,
+                  "startColumn": 19,
+                  "endColumn": 22
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher.AES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 84,
+                  "startColumn": 18,
+                  "endColumn": 21
+                },
+                {
+                  "line": 104,
+                  "startColumn": 18,
+                  "endColumn": 21
+                },
+                {
+                  "line": 230,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher.Blowfish.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 94,
+                  "startColumn": 23,
+                  "endColumn": 26
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 106,
+                  "startColumn": 25,
+                  "endColumn": 32
+                },
+                {
+                  "line": 232,
+                  "startColumn": 25,
+                  "endColumn": 32
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.PublicKey.RSA.generate",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 124,
+                  "startColumn": 15,
+                  "endColumn": 23
+                },
+                {
+                  "line": 131,
+                  "startColumn": 15,
+                  "endColumn": 23
+                },
+                {
+                  "line": 117,
+                  "startColumn": 15,
+                  "endColumn": 23
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Signature.pkcs1_15.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 139,
+                  "startColumn": 26,
+                  "endColumn": 29
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Signature.pkcs1_15.PKCS115_SigScheme.sign",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 139,
+                  "startColumn": 43,
+                  "endColumn": 47
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.PublicKey.DSA.generate",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 146,
+                  "startColumn": 15,
+                  "endColumn": 23
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.PublicKey.ECC.generate",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 169,
+                  "startColumn": 15,
+                  "endColumn": 23
+                },
+                {
+                  "line": 162,
+                  "startColumn": 15,
+                  "endColumn": 23
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Hash.SHA256.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 176,
+                  "startColumn": 16,
+                  "endColumn": 19
+                },
+                {
+                  "line": 153,
+                  "startColumn": 16,
+                  "endColumn": 19
+                },
+                {
+                  "line": 138,
+                  "startColumn": 16,
+                  "endColumn": 19
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Signature.DSS.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 177,
+                  "startColumn": 18,
+                  "endColumn": 21
+                },
+                {
+                  "line": 154,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Signature.DSS.DssSigScheme.sign",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 178,
+                  "startColumn": 24,
+                  "endColumn": 28
+                },
+                {
+                  "line": 155,
+                  "startColumn": 24,
+                  "endColumn": 28
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

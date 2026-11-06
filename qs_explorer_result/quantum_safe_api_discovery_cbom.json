@@ -1,0 +1,5366 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:6888c145025748c3b0e0f6e560db6f8e",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-03T21:25:55Z",
+    "tools" : {
+      "services" : [
+        {
+          "provider" : {
+            "name" : "IBM Corporation."
+          },
+          "name" : "IBM Quantum Safe Explorer",
+          "version" : "2.3.3.1"
+        }
+      ]
+    },
+    "component" : {
+      "type" : "application",
+      "name" : "",
+      "version" : ""
+    },
+    "properties" : [
+      {
+        "name" : "language",
+        "value" : "Go, cpp, C#, kotlin, nodejs, python"
+      },
+      {
+        "name" : "gitUrl",
+        "value" : ""
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "cc5339d0-9d06-4c6f-9aef-54ee649bde68",
+      "name" : "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 75,
+            "offset" : 55,
+            "additionalContext" : "lineHash=7c2cbd2abc3b4c46db73f8680664d18cd9c5a92a318ca4bb751948560c47cc6b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "87efc573-da91-4f8e-b523-c7c084c867f3",
+      "name" : "System.Security.Cryptography.HMACMD5.HMACMD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 120,
+            "offset" : 39,
+            "additionalContext" : "lineHash=1909ca05e217ac792affe2600f03dadde0917f5519a3d937e8caf8d72e983fdf;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac"
+        },
+        "oid" : "1.2.840.113549.2.4"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "68a23674-85d5-467b-8e0d-b941a45b3aa9",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 122,
+            "offset" : 36,
+            "additionalContext" : "lineHash=b3470585840aff63c89edef7e67c6710327b964d21c06d016e30904de9c11209;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e74f2fe7-5d9c-4a27-922d-55f4419b3090",
+      "name" : "System.Security.Cryptography.HMACSHA1.HMACSHA1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 132,
+            "offset" : 40,
+            "additionalContext" : "lineHash=7ab184dfdd4cb1274e072a4bd2761e713a73e9b0ae02efaf2f6345138f3b86c7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d8a58038-98b1-4740-af96-d3f4a3fb5456",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 134,
+            "offset" : 36,
+            "additionalContext" : "lineHash=b3470585840aff63c89edef7e67c6710327b964d21c06d016e30904de9c11209;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c65e660e-3a24-426b-884e-5c6a3f22f71f",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 163,
+            "offset" : 34,
+            "additionalContext" : "lineHash=606737f63ef99287a8b2e2b1290cd99c66ea5ba7939065bb86757e10319caab3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "b195eeab-1f0a-4687-ba0e-6f871d8c03da",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 165,
+            "offset" : 35,
+            "additionalContext" : "lineHash=1ea433958f8044c1b947dd725bfac418847e28caddf80b3249f27964f4119ec7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "16c1350e-5972-4b67-b75c-f2870f5308b2",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 190,
+            "offset" : 34,
+            "additionalContext" : "lineHash=606737f63ef99287a8b2e2b1290cd99c66ea5ba7939065bb86757e10319caab3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7827849e-120e-4dcb-b30b-6c0d86e4abe0",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 192,
+            "offset" : 35,
+            "additionalContext" : "lineHash=5f1794cadf4adf059ae2e66562977fb0ffabad5096fb74f348706bdc88cd7747;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "19764f3d-a8bd-4bee-bc42-09f036efc4a7",
+      "name" : "System.Security.Cryptography.SHA1.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 202,
+            "offset" : 37,
+            "additionalContext" : "lineHash=d18f86d7605d1f62d43bb8fdc2306330d271b4118a7a1afcaa83e55323aac531;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a157b5d5-8158-4242-b50b-d715ec1e1d7d",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 204,
+            "offset" : 36,
+            "additionalContext" : "lineHash=fc3ac4ee9fc5d0d229ab40312f63f39ddf810da5d6a4c419a0a33edf46553a54;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "476c8785-b150-4603-8fb6-df473c1b60b2",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 216,
+            "offset" : 34,
+            "additionalContext" : "lineHash=606737f63ef99287a8b2e2b1290cd99c66ea5ba7939065bb86757e10319caab3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "952fd5e9-083a-44e4-8e62-97ed8773b794",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 218,
+            "offset" : 35,
+            "additionalContext" : "lineHash=118690630ff837171e499c73f27fcf7b912a4494dfb5c78a72888387da905314;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "6d1d7077-d470-4561-89d5-6bc55a49525a",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 245,
+            "offset" : 34,
+            "additionalContext" : "lineHash=606737f63ef99287a8b2e2b1290cd99c66ea5ba7939065bb86757e10319caab3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f9fb519b-3735-4138-bad9-f4544805c767",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 247,
+            "offset" : 35,
+            "additionalContext" : "lineHash=1ea433958f8044c1b947dd725bfac418847e28caddf80b3249f27964f4119ec7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "5c220a27-4bf5-4ec1-906e-66bdc21a6a3e",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 346,
+            "offset" : 34,
+            "additionalContext" : "lineHash=606737f63ef99287a8b2e2b1290cd99c66ea5ba7939065bb86757e10319caab3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7e4000c8-43ac-43c1-938c-a7fc588204f5",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 348,
+            "offset" : 35,
+            "additionalContext" : "lineHash=1ea433958f8044c1b947dd725bfac418847e28caddf80b3249f27964f4119ec7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9d0b0ed8-a4c0-40d9-9e7d-c841a59d090a",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 394,
+            "offset" : 34,
+            "additionalContext" : "lineHash=606737f63ef99287a8b2e2b1290cd99c66ea5ba7939065bb86757e10319caab3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "dad10457-4413-4053-8d48-2005c4c9ff2f",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 397,
+            "offset" : 35,
+            "additionalContext" : "lineHash=3b0f1541741aa91dbe6cd4f2935a06af44b7c37543b2718ee6aeb79be9f21294;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c2584e38-6cb6-47c4-81d2-77ad3cfa0379",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 425,
+            "offset" : 34,
+            "additionalContext" : "lineHash=606737f63ef99287a8b2e2b1290cd99c66ea5ba7939065bb86757e10319caab3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "371ccb1a-5070-4c11-8939-61a47de50fc2",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+            "line" : 427,
+            "offset" : 35,
+            "additionalContext" : "lineHash=ea9e527a78bfbde47e31c8c0f196415463ad0310ec5beebe90f2cba30238260d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "718e01eb-d0a5-4721-a7be-b871e872521b",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 26,
+            "offset" : 34,
+            "additionalContext" : "lineHash=9e05978859fa95a6b47abb07b2a0c6cf0cdeb88df2153e7fc60520e64d7bdfff;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f06a464c-d184-4b83-83a0-1880e6da3360",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 28,
+            "offset" : 35,
+            "additionalContext" : "lineHash=49475b3f1ec32518823fb5845eeb433bdf9de2ad39a20692a3735215934a00e8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "5f228860-744f-4cb6-87dd-71aab17defd7",
+      "name" : "System.Security.Cryptography.SHA1.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 38,
+            "offset" : 37,
+            "additionalContext" : "lineHash=235dbb58577ce33c365153e7e1137c210ac2eea867ac67f35f25fd4301a238cd;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "4cb3564d-3470-433a-8369-301d0dde8866",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 40,
+            "offset" : 36,
+            "additionalContext" : "lineHash=dd0c58168a60d844c7f23489b8ef53a6b1b1dde183bbdbec1297a43e23997b87;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e38e2a34-7457-44c2-8854-9444873faa95",
+      "name" : "System.Security.Cryptography.MD5.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 50,
+            "offset" : 34,
+            "additionalContext" : "lineHash=9e05978859fa95a6b47abb07b2a0c6cf0cdeb88df2153e7fc60520e64d7bdfff;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f05493c6-0820-4f87-a23a-8af48c352097",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 52,
+            "offset" : 35,
+            "additionalContext" : "lineHash=fe84c46b57ab750bc0a73f13b8233783430fa128ada6ded8e88d0d25be79d42a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "21e9b169-1498-4852-b1b5-5e14d4d45081",
+      "name" : "System.Security.Cryptography.SHA1.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 62,
+            "offset" : 37,
+            "additionalContext" : "lineHash=235dbb58577ce33c365153e7e1137c210ac2eea867ac67f35f25fd4301a238cd;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7fbbd6a9-dab7-4aee-93ff-acccc72e2f69",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 64,
+            "offset" : 36,
+            "additionalContext" : "lineHash=65dd0fa814ea7359607da13e2385364a6138f01c9ae605590c84d6f4b5cd47e2;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "39310b7b-ed25-47ca-8426-11c2f4896dba",
+      "name" : "System.Security.Cryptography.DES.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 78,
+            "offset" : 34,
+            "additionalContext" : "lineHash=29839f0cb6644cfaafb27d444c0af686aef62bce3759072dfeb53001fa975c03;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "70e4eea0-60d9-4d4d-926f-042ceba34844",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 84,
+            "offset" : 57,
+            "additionalContext" : "lineHash=04af2858c8247be0dbc63eb69d7c30f16d1995f871a68fee1bce50e5c1783e70;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "8a9fc1ed-9b24-4cdc-89bd-576308dfd0ed",
+      "name" : "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 87,
+            "offset" : 51,
+            "additionalContext" : "lineHash=bbb7416248ecbe9bf55248a88753a26d02fedf45a746c1cc371f6ffb1967d815;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "860e60fb-42bf-4066-ad0d-90333fa5087e",
+      "name" : "System.Security.Cryptography.TripleDES.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 98,
+            "offset" : 52,
+            "additionalContext" : "lineHash=5e5abf267fb70212a87e7ec2b0953699cd45486fcc8b37883decbaa57f006524;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        },
+        "oid" : "1.3.36.3.1.3"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3d1d8e90-0b4e-456b-9115-011e897ef62c",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 104,
+            "offset" : 63,
+            "additionalContext" : "lineHash=2262be686c6c50ebf2a8080a4907fe178a6697ccb5f7b67a15fa67a17923525f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "86c42123-f38d-4ee6-aa55-db34c52bb6f0",
+      "name" : "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 107,
+            "offset" : 51,
+            "additionalContext" : "lineHash=bbb7416248ecbe9bf55248a88753a26d02fedf45a746c1cc371f6ffb1967d815;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "cf380f80-cf21-4ba7-a163-1f781c5b4589",
+      "name" : "System.Security.Cryptography.RC2.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 118,
+            "offset" : 34,
+            "additionalContext" : "lineHash=65dfb2026f3f5fb72fab56d3cdefa4cb5150666e7323e6c0aebc9d4bddc19132;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "5ad66c03-a245-45bd-ab25-8f6c7df9b96c",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 124,
+            "offset" : 57,
+            "additionalContext" : "lineHash=1d2b30f9add6c47402173faf6d36e091c867886282eaed37f9e56641f2159651;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c85fd778-8c59-4035-856b-1c412ba59ee8",
+      "name" : "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 127,
+            "offset" : 51,
+            "additionalContext" : "lineHash=bbb7416248ecbe9bf55248a88753a26d02fedf45a746c1cc371f6ffb1967d815;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0a4767f3-13aa-45e9-a96e-dea8339ef7fe",
+      "name" : "System.Security.Cryptography.Aes.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 138,
+            "offset" : 34,
+            "additionalContext" : "lineHash=4afd5926b0fd2ca7bd946c7079aa16b9ebe28a73732561974e447c5bb912129b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "dcda901c-8ddf-4c2f-8278-3f66bae09e0a",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 144,
+            "offset" : 57,
+            "additionalContext" : "lineHash=3507a90e7543327bb14c46828e67503db8620baa4c5bc9e371f2a9e37666e69e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "346222ca-5c1b-40f4-90f1-c59983e31782",
+      "name" : "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 147,
+            "offset" : 51,
+            "additionalContext" : "lineHash=bbb7416248ecbe9bf55248a88753a26d02fedf45a746c1cc371f6ffb1967d815;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "b663656a-b507-4b4a-9efe-50247d285d4c",
+      "name" : "System.Security.Cryptography.Aes.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 158,
+            "offset" : 34,
+            "additionalContext" : "lineHash=4afd5926b0fd2ca7bd946c7079aa16b9ebe28a73732561974e447c5bb912129b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "60ae7336-8087-4fe5-8775-85fa741bc3a7",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 166,
+            "offset" : 57,
+            "additionalContext" : "lineHash=3507a90e7543327bb14c46828e67503db8620baa4c5bc9e371f2a9e37666e69e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d9bc4f64-54cf-48bf-b56e-7867ad8190a2",
+      "name" : "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 169,
+            "offset" : 51,
+            "additionalContext" : "lineHash=bbb7416248ecbe9bf55248a88753a26d02fedf45a746c1cc371f6ffb1967d815;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "17ba4b77-2dab-45df-90ec-bf38c75e3972",
+      "name" : "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 184,
+            "offset" : 48,
+            "additionalContext" : "lineHash=0221cdaf43921c76a915e6e14783b12c88393d76f3eeeb936dd4dcdd5b2f2365;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7f2c0279-b1db-46c3-8cc3-ef0f12fc22f8",
+      "name" : "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 193,
+            "offset" : 48,
+            "additionalContext" : "lineHash=c539b7294819eb2850a77629299316b457e8f29f76163facf4dfc9830b7c6d37;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d6165bbc-e51e-4000-92c1-c2901b99c837",
+      "name" : "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 202,
+            "offset" : 48,
+            "additionalContext" : "lineHash=62c0f3e8a19bb83978c0db4552cf631aecc4f7b51b4a6805c7d8b34f4ee487ea;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d89d9e2c-4ba1-45e8-8748-73bbb3ec843a",
+      "name" : "System.Security.Cryptography.RSA.SignData",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 212,
+            "offset" : 36,
+            "additionalContext" : "lineHash=4227a9c1d3aad00f4d97121a33e20268c852fba087f9b53cea40144fa491e252;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d78459e4-6f9c-4571-a039-d8db9875c8a8",
+      "name" : "System.Security.Cryptography.DSACryptoServiceProvider.DSACryptoServiceProvider",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 221,
+            "offset" : 48,
+            "additionalContext" : "lineHash=cc9afbc016a5641053479bed99269b8529a08d04e26f95f9639673d7a6689040;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature"
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "1c73f207-a78f-4f00-b1e8-7c2ec7715b1d",
+      "name" : "System.Security.Cryptography.DSA.SignData",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 231,
+            "offset" : 36,
+            "additionalContext" : "lineHash=b7ec21478cf2b022c81745474c3e0700438ecd79c963c94cc9bd68882d475b49;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2bae9929-c36a-4f52-b33c-dd05d1ec7a02",
+      "name" : "System.Security.Cryptography.ECDsaCng.ECDsaCng",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 240,
+            "offset" : 34,
+            "additionalContext" : "lineHash=3d1756eb96227d5d3c2f0cf270c77e215c942a809e5c31fc290c2bfe81affbf6;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature"
+        },
+        "oid" : "1.2.840.10045.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "76a30abb-5161-455b-bb05-0e986391f48c",
+      "name" : "System.Security.Cryptography.ECDsa.SignData",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 250,
+            "offset" : 38,
+            "additionalContext" : "lineHash=5cb7f971b5868c25190f7b7fcd06ebed6cc4ec29b340e4f2737adb3b39b54f06;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "1.2.840.10045.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7ba69989-7356-43ef-892f-2421e1a4649a",
+      "name" : "System.Security.Cryptography.Aes.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 314,
+            "offset" : 34,
+            "additionalContext" : "lineHash=4afd5926b0fd2ca7bd946c7079aa16b9ebe28a73732561974e447c5bb912129b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c32f54d5-faaa-4e71-9642-f60512286f29",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 321,
+            "offset" : 57,
+            "additionalContext" : "lineHash=3507a90e7543327bb14c46828e67503db8620baa4c5bc9e371f2a9e37666e69e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "aabc9e7c-670a-4c09-a66b-a8e19de52070",
+      "name" : "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 324,
+            "offset" : 51,
+            "additionalContext" : "lineHash=bbb7416248ecbe9bf55248a88753a26d02fedf45a746c1cc371f6ffb1967d815;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a49c4415-26f6-4cf6-ac2a-4df0c05c80ef",
+      "name" : "System.Security.Cryptography.Aes.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 339,
+            "offset" : 34,
+            "additionalContext" : "lineHash=4afd5926b0fd2ca7bd946c7079aa16b9ebe28a73732561974e447c5bb912129b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fe58f81c-8668-4565-973e-0918aade55b9",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 342,
+            "offset" : 21,
+            "additionalContext" : "lineHash=8bc716bb931b419a4112138fe191add2c67bb454bcd2bb39a67bdb296ba88151;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9921fb78-4276-4e3b-8f42-78dc08b49ea4",
+      "name" : "System.Security.Cryptography.DES.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 352,
+            "offset" : 34,
+            "additionalContext" : "lineHash=29839f0cb6644cfaafb27d444c0af686aef62bce3759072dfeb53001fa975c03;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "76a83f91-8f8d-45d8-930c-4ecea6b49591",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 354,
+            "offset" : 21,
+            "additionalContext" : "lineHash=9f2a3a762b6b1660bfb05322845f45f08801b25be2e05e43031f7a6fca464ead;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "8e810c9a-a7be-4ca4-8ff7-8d20f0cecc1c",
+      "name" : "System.Security.Cryptography.HMACMD5.HMACMD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 368,
+            "offset" : 39,
+            "additionalContext" : "lineHash=1c3d02b24b4865ab5611081be53e54cba972c438dedffc371efe338c03892e9e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac"
+        },
+        "oid" : "1.2.840.113549.2.4"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "319a5bb7-1506-4fd0-9241-977da6b692cb",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 370,
+            "offset" : 36,
+            "additionalContext" : "lineHash=32ef686b8452daee278b1dcf01c9380fe099f8b0f38e10a93989db4abbaa863d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e5986520-216b-4098-8cca-fb9b5133441c",
+      "name" : "System.Security.Cryptography.HMACSHA1.HMACSHA1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 380,
+            "offset" : 40,
+            "additionalContext" : "lineHash=1395b08c5821b8ff49580539fab5cc02ee23a2b838338574da6f648edd598208;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "161ebbe3-de0d-4666-88df-24d80adc8dec",
+      "name" : "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 382,
+            "offset" : 36,
+            "additionalContext" : "lineHash=32ef686b8452daee278b1dcf01c9380fe099f8b0f38e10a93989db4abbaa863d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3c265195-9c64-46f1-8e68-55c9ecaf48fa",
+      "name" : "System.Security.Cryptography.DES.Create",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 406,
+            "offset" : 34,
+            "additionalContext" : "lineHash=29839f0cb6644cfaafb27d444c0af686aef62bce3759072dfeb53001fa975c03;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "27e907f7-0052-46cb-975a-7b8a464d3e75",
+      "name" : "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 412,
+            "offset" : 57,
+            "additionalContext" : "lineHash=04af2858c8247be0dbc63eb69d7c30f16d1995f871a68fee1bce50e5c1783e70;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e6a0aa27-4929-445d-8d72-e55f082fcf07",
+      "name" : "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+            "line" : 415,
+            "offset" : 51,
+            "additionalContext" : "lineHash=bbb7416248ecbe9bf55248a88753a26d02fedf45a746c1cc371f6ffb1967d815;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a99c7588-eafd-4a9c-92dc-02dc51abb706",
+      "name" : "MD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 31,
+            "offset" : 5,
+            "additionalContext" : "lineHash=76d512d188ca4afb4578e613424faed25a2d81d70004621c49f07b0137e9176a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "4ce01ce7-07f3-44cd-9add-f606925bc87f",
+      "name" : "SHA1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 44,
+            "offset" : 5,
+            "additionalContext" : "lineHash=4919386d93320e91092d166519d7c5a51d2b87d4be67dfc4983e57186dcd97e6;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7649b03c-7804-45b0-8e7d-9dddab23cf53",
+      "name" : "MD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 57,
+            "offset" : 5,
+            "additionalContext" : "lineHash=161bed7087febf84168a7221593ed8a71d3eef6bcbe4dd3d76ff932e3170e36a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d96a4dbf-a696-4ba7-9fc5-688c11d009d4",
+      "name" : "DES_set_key_unchecked",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 76,
+            "offset" : 5,
+            "additionalContext" : "lineHash=ba06f87cbebba6e313541652f529a1636d3e0e83c5520dee4d891e8e9be728aa;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f8338397-10cd-4ee2-9723-e3f4a2452b37",
+      "name" : "DES_ecb_encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 83,
+            "offset" : 5,
+            "additionalContext" : "lineHash=781e202ce63cb8b6571aec122956dccfb94d3c8b0a4e4ea1a5b4e64d1fdb4ac8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        },
+        "oid" : "1.3.14.3.2.6"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3f2f0574-4011-4976-82a7-d150ef380adb",
+      "name" : "DES_set_key_unchecked",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 101,
+            "offset" : 5,
+            "additionalContext" : "lineHash=7c1dbb56f965218685f4886cf7ce3604d7a7971b266a9ea4f117adde36119548;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "084d76a4-7623-4519-9944-bfd108798936",
+      "name" : "DES_set_key_unchecked",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 102,
+            "offset" : 5,
+            "additionalContext" : "lineHash=800a871226b838911fc8151375103ce4fb77faf64c3a4f3aa9b877b32aae88f7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "de514f9a-4450-4023-8712-125c30349742",
+      "name" : "DES_set_key_unchecked",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 103,
+            "offset" : 5,
+            "additionalContext" : "lineHash=b0c03b8c64a86dc15e9c4ea19dae1919ad96e4ada5d2c867c6563e4045399a16;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "b1faec00-6a8c-44f4-8804-4cb250c4f8a9",
+      "name" : "DES_ecb3_encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 110,
+            "offset" : 5,
+            "additionalContext" : "lineHash=e8c992bdf4b83e329b74aaae223359361c6abc50141dc27c8e43ad04082c5475;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        },
+        "oid" : "1.3.14.3.2.6"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9f7cd6fc-0c2a-491b-ba3b-d5f30a7a0598",
+      "name" : "RC4_set_key",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 125,
+            "offset" : 5,
+            "additionalContext" : "lineHash=9851bb1112d2b361398fb539caaa557eef6a5883a96ce63afbb08d00fff92a76;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "stream-cipher"
+        },
+        "oid" : "1.2.840.113549.3.4"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7bea7fcb-417b-4394-8bed-f45454351091",
+      "name" : "RC4",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 128,
+            "offset" : 5,
+            "additionalContext" : "lineHash=711a627003b03ba2ba28657b9b712c211c0986d454a05f270fe0e8f24680ec76;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "stream-cipher"
+        },
+        "oid" : "1.2.840.113549.3.4"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2b113ccb-99b8-49f5-bf2c-9eb3ecdf9cfa",
+      "name" : "EVP_CIPHER_CTX_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 144,
+            "offset" : 27,
+            "additionalContext" : "lineHash=a4494764b1e29c0a2f970402f16bafa613f72e4274cc741f6726d0025e1d56a2;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "00cfef43-f62f-442c-bf08-5c2c6bc107d4",
+      "name" : "EVP_EncryptInit_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 146,
+            "offset" : 5,
+            "additionalContext" : "lineHash=342f18cefb03957cd4f9bb38bfad1cb119de6097fb39e0ee897512fe26fe93ea;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "22383189-5650-4736-a470-6a6afa17f6f2",
+      "name" : "EVP_aes_128_ecb",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 146,
+            "offset" : 29,
+            "additionalContext" : "lineHash=342f18cefb03957cd4f9bb38bfad1cb119de6097fb39e0ee897512fe26fe93ea;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb"
+        },
+        "oid" : "2.16.840.1.101.3.4.1.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d5e6eab6-6970-43fe-afde-0b79c207d56c",
+      "name" : "EVP_EncryptFinal_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 154,
+            "offset" : 5,
+            "additionalContext" : "lineHash=a6989a1fe49c7c4c6e3e1190d1aac51e00d10dd56df0ae2e03e015ced2c98d60;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fb072078-c9dd-4e56-8fa5-87667b58d2fa",
+      "name" : "EVP_CIPHER_CTX_free",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 157,
+            "offset" : 5,
+            "additionalContext" : "lineHash=67cad927cbe16de8072300300d73b461d4a72cd8deaf1666f1aa4ce8af59584d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "23b9449d-fe6a-4493-bf57-729986b63a59",
+      "name" : "EVP_CIPHER_CTX_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 173,
+            "offset" : 27,
+            "additionalContext" : "lineHash=a4494764b1e29c0a2f970402f16bafa613f72e4274cc741f6726d0025e1d56a2;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d0d8885d-4496-4ca4-b617-65b2954e6d04",
+      "name" : "EVP_EncryptInit_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 174,
+            "offset" : 5,
+            "additionalContext" : "lineHash=90b1e1313ac5bd2f2a2af63ab45afc63b9b66a715d758826acaa8ecc6d9b4286;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "68f8fd27-8975-4b7e-809e-6412a89f438a",
+      "name" : "EVP_aes_128_cbc",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 174,
+            "offset" : 29,
+            "additionalContext" : "lineHash=90b1e1313ac5bd2f2a2af63ab45afc63b9b66a715d758826acaa8ecc6d9b4286;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cbc"
+        },
+        "oid" : "2.16.840.1.101.3.4.1.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "1b280d2f-537c-4cde-a52f-4f57352ae653",
+      "name" : "EVP_EncryptFinal_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 182,
+            "offset" : 5,
+            "additionalContext" : "lineHash=a6989a1fe49c7c4c6e3e1190d1aac51e00d10dd56df0ae2e03e015ced2c98d60;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "240c4c1b-09e7-46e4-8128-77ccf6e801a1",
+      "name" : "EVP_CIPHER_CTX_free",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 185,
+            "offset" : 5,
+            "additionalContext" : "lineHash=67cad927cbe16de8072300300d73b461d4a72cd8deaf1666f1aa4ce8af59584d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2e81a63a-4be0-4c78-8e9f-a0f5853f89ed",
+      "name" : "RSA_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 201,
+            "offset" : 16,
+            "additionalContext" : "lineHash=acf76aa4e8f054ee9b734eba15013c1a3751b548ba1613c3681523463adc42bd;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fe821941-c37e-40a7-bc16-a3c899b2bd83",
+      "name" : "RSA_generate_key_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 206,
+            "offset" : 5,
+            "additionalContext" : "lineHash=5ebcb29809b59bc968a9c758a822147a7fc4d418b1dd1e26aff791dd222f448f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "aba505b0-ed0f-4fc2-b6d2-04b292da9466",
+      "name" : "RSA_size",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 208,
+            "offset" : 47,
+            "additionalContext" : "lineHash=d748117c11ef00f741d190240869736c99994bcd8a19bc2df9ea0f0918f2a303;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0a3808b9-09ac-4b9b-9cfa-09341a4f2874",
+      "name" : "RSA_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 218,
+            "offset" : 16,
+            "additionalContext" : "lineHash=acf76aa4e8f054ee9b734eba15013c1a3751b548ba1613c3681523463adc42bd;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9bb6fd60-c22b-425e-b752-49ae812d16bb",
+      "name" : "RSA_generate_key_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 223,
+            "offset" : 5,
+            "additionalContext" : "lineHash=bcde00e95677f8936548928b3bd159d06c91bcd579b81b82b2ce13573e5e4a07;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "74ad296d-f839-4ee9-a2a5-351d24edb2e3",
+      "name" : "RSA_size",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 225,
+            "offset" : 48,
+            "additionalContext" : "lineHash=cf36a80f94bd0e25cc593d060f69f0a41412b7f9a2bbc8f4534155a311d3cbcb;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "b369a08c-19d1-47e7-bf36-6e82bf4cc2c9",
+      "name" : "RSA_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 235,
+            "offset" : 16,
+            "additionalContext" : "lineHash=acf76aa4e8f054ee9b734eba15013c1a3751b548ba1613c3681523463adc42bd;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fc46020b-6800-406b-8a5e-d0b44e4f39b3",
+      "name" : "RSA_generate_key_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 240,
+            "offset" : 5,
+            "additionalContext" : "lineHash=a506dda8e07b46c57fab1df1a0c1d72f26ae3d940c2d329f64a3e5175f6e97d4;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "30e42022-123a-4826-a3c5-eca451b88dd9",
+      "name" : "RSA_size",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 242,
+            "offset" : 48,
+            "additionalContext" : "lineHash=0900d6e3032fdf2d9790efa507c8dbdb458b4b3afacc72e5c157525481a66671;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7a4cec9c-6342-4cb0-9e3a-c3760aa0d045",
+      "name" : "DSA_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 252,
+            "offset" : 16,
+            "additionalContext" : "lineHash=010025f48b7a951eb18c8ab7c325065399e1d87df8afaaf65a5313a3de3e9b03;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature"
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "09e3a212-9e7a-441e-a12f-1c9394ba0aa0",
+      "name" : "DSA_generate_parameters_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 255,
+            "offset" : 5,
+            "additionalContext" : "lineHash=f62047f88392a22eaf18f1b42d7c83d70820fa1f8c882a80ae0c370a7f9cc63a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "generate"
+          ]
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "932250da-e09c-4c61-b44f-419cf7a8e11d",
+      "name" : "DSA_generate_key",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 256,
+            "offset" : 5,
+            "additionalContext" : "lineHash=1204539bfd7fcc4c88e33983e0b470dcd93298727ecf90afdf66fb30b8a049af;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "b3a9248e-6f39-4038-b9f0-bea187eaa5d8",
+      "name" : "DSA_free",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 260,
+            "offset" : 5,
+            "additionalContext" : "lineHash=0788e7052675a1daed64b0ac5d9deaf77e203f16d68c9a2eeee39e770d87fbc2;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature"
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e4621cae-ea90-4d23-86e1-7227ca71e44f",
+      "name" : "EC_KEY_generate_key",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 268,
+            "offset" : 5,
+            "additionalContext" : "lineHash=3b08d6a0b0ad15ba42a24006327c8801761a297a44600bdf0e0a6c6171660005;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d56c7c00-5a43-475b-8ac2-02e0fc48f38c",
+      "name" : "EC_KEY_generate_key",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 280,
+            "offset" : 5,
+            "additionalContext" : "lineHash=3b08d6a0b0ad15ba42a24006327c8801761a297a44600bdf0e0a6c6171660005;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f482b834-5df5-4b4a-93f8-017dd5b4ea7d",
+      "name" : "EVP_CIPHER_CTX_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 342,
+            "offset" : 27,
+            "additionalContext" : "lineHash=a4494764b1e29c0a2f970402f16bafa613f72e4274cc741f6726d0025e1d56a2;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c8960a10-2855-486e-8186-9be30412d169",
+      "name" : "EVP_EncryptInit_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 343,
+            "offset" : 5,
+            "additionalContext" : "lineHash=8ab07c9d3dbb1b43a5b54d477a5a164e264691ae343dbba45056edde3e216234;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "aa9ccd05-7264-4068-b379-cddd04b7a334",
+      "name" : "EVP_aes_128_cbc",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 343,
+            "offset" : 29,
+            "additionalContext" : "lineHash=8ab07c9d3dbb1b43a5b54d477a5a164e264691ae343dbba45056edde3e216234;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cbc"
+        },
+        "oid" : "2.16.840.1.101.3.4.1.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "04ac87dc-965a-483c-bf1f-c9beba1e4f14",
+      "name" : "EVP_EncryptFinal_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 351,
+            "offset" : 5,
+            "additionalContext" : "lineHash=a6989a1fe49c7c4c6e3e1190d1aac51e00d10dd56df0ae2e03e015ced2c98d60;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "1af25dba-0afb-4f06-8ae8-396e4fdbbdb6",
+      "name" : "EVP_CIPHER_CTX_free",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 354,
+            "offset" : 5,
+            "additionalContext" : "lineHash=67cad927cbe16de8072300300d73b461d4a72cd8deaf1666f1aa4ce8af59584d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "31e561dc-b3ca-4cac-b58c-73f1a5e45f99",
+      "name" : "RSA_new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 370,
+            "offset" : 16,
+            "additionalContext" : "lineHash=acf76aa4e8f054ee9b734eba15013c1a3751b548ba1613c3681523463adc42bd;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "41bc47af-16b2-4b6e-8653-f2c4e3009ace",
+      "name" : "RSA_generate_key_ex",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 375,
+            "offset" : 5,
+            "additionalContext" : "lineHash=bcde00e95677f8936548928b3bd159d06c91bcd579b81b82b2ce13573e5e4a07;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "bf4c70d7-2051-4935-a584-a87de21fb783",
+      "name" : "DES_set_key_unchecked",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 404,
+            "offset" : 5,
+            "additionalContext" : "lineHash=ba06f87cbebba6e313541652f529a1636d3e0e83c5520dee4d891e8e9be728aa;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0c9844a8-9dcd-4f75-a873-64fa56b77a2e",
+      "name" : "DES_ecb_encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+            "line" : 410,
+            "offset" : 5,
+            "additionalContext" : "lineHash=781e202ce63cb8b6571aec122956dccfb94d3c8b0a4e4ea1a5b4e64d1fdb4ac8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        },
+        "oid" : "1.3.14.3.2.6"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9ea7eabc-5b8c-4bb0-a862-63aa52a3aeb5",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 30,
+            "offset" : 24,
+            "additionalContext" : "lineHash=29d0c6d958deaa07e60bbf1c38c62be15fb645f8903f0dc2b9482b61d21af0fe;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a8a6d051-84a0-4183-b33b-c17d5e05a6c3",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 30,
+            "offset" : 58,
+            "additionalContext" : "lineHash=29d0c6d958deaa07e60bbf1c38c62be15fb645f8903f0dc2b9482b61d21af0fe;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ac250379-ea37-429a-b76f-1fb124533c3f",
+      "name" : "hashlib.sha1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 36,
+            "offset" : 24,
+            "additionalContext" : "lineHash=d6118bf4726b23c4b4b8c2978fbf92818522d7e0fba3fb035dba37b353ecc04c;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c4122f47-058e-490f-9638-4af9d9637a34",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 36,
+            "offset" : 59,
+            "additionalContext" : "lineHash=d6118bf4726b23c4b4b8c2978fbf92818522d7e0fba3fb035dba37b353ecc04c;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f7dd8c73-a2b5-4c80-8896-09a4a8337d52",
+      "name" : "hmac.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 65,
+            "offset" : 21,
+            "additionalContext" : "lineHash=37783313011ee1e4df0c46573224182917ed12fdc8ecfd85b52d4df96c1aa56f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9c6721b6-f2dc-45eb-a142-367824dcc72d",
+      "name" : "hmac.HMAC.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 69,
+            "offset" : 11,
+            "additionalContext" : "lineHash=6435631d05f25228e059ca0df34bfeb9a2520ae67b2198cdecc3fe0fc79d4fb3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "1f9d7886-c891-4b8c-a356-ef4b62152deb",
+      "name" : "hmac.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 73,
+            "offset" : 21,
+            "additionalContext" : "lineHash=37783313011ee1e4df0c46573224182917ed12fdc8ecfd85b52d4df96c1aa56f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "de598b40-462f-4d0d-9517-491ab2258e6a",
+      "name" : "hmac.HMAC.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 77,
+            "offset" : 11,
+            "additionalContext" : "lineHash=6435631d05f25228e059ca0df34bfeb9a2520ae67b2198cdecc3fe0fc79d4fb3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "mac",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "1266ffa3-93f5-4e74-af81-8e974caf7cbc",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 134,
+            "offset" : 24,
+            "additionalContext" : "lineHash=c3ece05585962912dd54e1f2cf870882bf2b54f33fbbe93f3ac02b89c24b3067;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "25df83cd-d6ed-44bf-a2de-7fc6c146384a",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 134,
+            "offset" : 59,
+            "additionalContext" : "lineHash=c3ece05585962912dd54e1f2cf870882bf2b54f33fbbe93f3ac02b89c24b3067;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "260853dd-6413-4795-a6f1-29ef0e0c8655",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 187,
+            "offset" : 24,
+            "additionalContext" : "lineHash=d43f9517a849a96097cad9f598d43234b5ee8c6651f931678686785a4c372c45;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "74601aec-dd20-41fd-89cb-017a8244297c",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 187,
+            "offset" : 43,
+            "additionalContext" : "lineHash=d43f9517a849a96097cad9f598d43234b5ee8c6651f931678686785a4c372c45;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f3a1e74e-f483-4db9-9f34-c4ed5a57f9f2",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 201,
+            "offset" : 24,
+            "additionalContext" : "lineHash=699d09c4573edf6a26859c36b1f2afdb7d7395240959b49d7815bb3deb536d7a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3dcfc0bc-9369-4bc6-906e-672f6b4f7af4",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 201,
+            "offset" : 60,
+            "additionalContext" : "lineHash=699d09c4573edf6a26859c36b1f2afdb7d7395240959b49d7815bb3deb536d7a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "8340fa6f-d777-4244-9998-45509dea7d99",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 229,
+            "offset" : 24,
+            "additionalContext" : "lineHash=9084247d981648e598588a28ad8f04f2991c6fff1e1d9897c552c4d2f30e9773;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "1745ec4e-993b-4527-ace6-c816b23ef5de",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 229,
+            "offset" : 42,
+            "additionalContext" : "lineHash=9084247d981648e598588a28ad8f04f2991c6fff1e1d9897c552c4d2f30e9773;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "064f559a-fd3a-476e-b872-37ca234ac0ca",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 276,
+            "offset" : 24,
+            "additionalContext" : "lineHash=e2a4f5c5d1685b507d213bf257836513012e7b9cf780624c305f71e563cc5f25;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fbc46e3f-ab8d-4b15-8c96-d321f7f18dbd",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+            "line" : 276,
+            "offset" : 60,
+            "additionalContext" : "lineHash=e2a4f5c5d1685b507d213bf257836513012e7b9cf780624c305f71e563cc5f25;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "42e9a375-3eb3-44ee-80bc-a15fab102eb7",
+      "name" : "cryptography.hazmat.primitives.hashes.Hash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 17,
+            "offset" : 16,
+            "additionalContext" : "lineHash=2807bc9539a3eb5ed38465aaa9aaf9ac753d542622c3e2cfa5a225ff165f60ce;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "73647f8d-c21e-4b65-b7cf-c78f82983737",
+      "name" : "cryptography.hazmat.primitives.hashes.SHA256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 17,
+            "offset" : 28,
+            "additionalContext" : "lineHash=2807bc9539a3eb5ed38465aaa9aaf9ac753d542622c3e2cfa5a225ff165f60ce;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "81e84e4d-fac5-4e47-88d0-e9bff628ea56",
+      "name" : "cryptography.hazmat.primitives.hashes.Hash",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 18,
+            "offset" : 16,
+            "additionalContext" : "lineHash=096621e4f9cf373b02f213a09d14fb59072a2b5f524784c610adfb942da201fc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3c3df066-3a72-4625-ae61-806502735762",
+      "name" : "cryptography.hazmat.primitives.hashes.SHA256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 18,
+            "offset" : 28,
+            "additionalContext" : "lineHash=096621e4f9cf373b02f213a09d14fb59072a2b5f524784c610adfb942da201fc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "bd6f0908-9ddf-4192-b27b-6a8b8be1abda",
+      "name" : "cryptography.hazmat.primitives.hashes.Hash.update",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 21,
+            "offset" : 7,
+            "additionalContext" : "lineHash=fef8300d924d324d70211a15c11a80bad8d502e1c555dbe40a7c142bc6fd153e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a1f7cbbc-5221-4bcf-b4a4-b24b29d191a6",
+      "name" : "cryptography.hazmat.primitives.hashes.Hash.update",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 22,
+            "offset" : 7,
+            "additionalContext" : "lineHash=5ec8e0e661369543232bddca037ca8b589b042b24e72e64b9d6d0bab4d1fee9a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2d57066d-d045-46fe-bbbb-89d82be1e6f4",
+      "name" : "cryptography.hazmat.primitives.hashes.Hash.finalize",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 25,
+            "offset" : 18,
+            "additionalContext" : "lineHash=5bda43e67c88b6f1a2797e5d44a725bc4221530fd3698ff3cfe00a940dbfba26;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "db1a8ebb-b3d0-4578-8a66-5958cd336eb2",
+      "name" : "cryptography.hazmat.primitives.hashes.Hash.finalize",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/ibm_quantum_platform_course/sample.py",
+            "line" : 26,
+            "offset" : 18,
+            "additionalContext" : "lineHash=8256f7657661adacd416fbb79d223638531bfc300a201f87cdd78dc29d4db559;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7a55684d-bf57-4a33-8067-5032df0bbe9c",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 28,
+            "offset" : 24,
+            "additionalContext" : "lineHash=76aebd74d697b7f35afb93e849e6bbab7275b776fe65c7e98e325f495a016a51;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3f1cd555-e8e5-43fd-8bb0-a3a0be46da33",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 28,
+            "offset" : 43,
+            "additionalContext" : "lineHash=76aebd74d697b7f35afb93e849e6bbab7275b776fe65c7e98e325f495a016a51;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7306eb34-40b9-485e-b2be-2af2ac338484",
+      "name" : "hashlib.sha1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 35,
+            "offset" : 25,
+            "additionalContext" : "lineHash=ddbc4e53abe3248aaec2aa537283e27651ade2611681f4601bc3986d321f4265;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7ee48f45-d2f4-4942-8776-4c978977cd8c",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 35,
+            "offset" : 45,
+            "additionalContext" : "lineHash=ddbc4e53abe3248aaec2aa537283e27651ade2611681f4601bc3986d321f4265;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "923ec273-65d1-43c5-8b75-6c0da1cfaed5",
+      "name" : "hashlib.md5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 42,
+            "offset" : 20,
+            "additionalContext" : "lineHash=6d9ad140ff86130321c89a86981e0d18a0d5ca6915cb418dc388f841ed062896;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "58357031-9f0f-4ae9-98e9-bcbb3671d0b9",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 42,
+            "offset" : 43,
+            "additionalContext" : "lineHash=6d9ad140ff86130321c89a86981e0d18a0d5ca6915cb418dc388f841ed062896;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "662b3793-3007-4bae-a327-7e25a8aacc31",
+      "name" : "hashlib.sha1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 48,
+            "offset" : 20,
+            "additionalContext" : "lineHash=588a0c2662d95c5319cfb2e9ab817a17bf76fa950db07bfa98e301c97411808f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0b5c2ba3-4bba-4ad2-8f52-db8e26c8d89d",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 48,
+            "offset" : 44,
+            "additionalContext" : "lineHash=588a0c2662d95c5319cfb2e9ab817a17bf76fa950db07bfa98e301c97411808f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ae9f716a-b4a0-40e0-8544-7f605ea8ade0",
+      "name" : "Crypto.Cipher.DES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 58,
+            "offset" : 18,
+            "additionalContext" : "lineHash=0dd3d0dc2b7a3f39fcea659e77e523256fe11507faecb9e0dc67ae70a5c8f6f8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a514b7ca-076c-4264-a363-6e5060acb44a",
+      "name" : "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 60,
+            "offset" : 25,
+            "additionalContext" : "lineHash=a1c9ef128dd56925f55f9f0b37297ef3886a8302fea8d1a901289daef6c11d4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "49451647-5217-4855-973b-8c48ccc02dac",
+      "name" : "Crypto.Cipher.DES3.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 67,
+            "offset" : 19,
+            "additionalContext" : "lineHash=a5446bb40bd1bffad4b9e386f786331e2e7cb1fd84fa6109fc71baf8f0d2f933;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "624c4eb5-820c-4cf0-afcf-6f8ae8b0882d",
+      "name" : "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 69,
+            "offset" : 25,
+            "additionalContext" : "lineHash=a1c9ef128dd56925f55f9f0b37297ef3886a8302fea8d1a901289daef6c11d4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2baebeda-eda1-46ac-abfe-d34ec5a9f666",
+      "name" : "Crypto.Cipher.ARC4.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 76,
+            "offset" : 19,
+            "additionalContext" : "lineHash=8175c1ac34b8dc68fa9384561e74297d8c29f8f90267e54cfb969eff1960daa1;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "stream-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ed6a27d9-1a44-4971-9c8d-25a7a139ec04",
+      "name" : "Crypto.Cipher.AES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 84,
+            "offset" : 18,
+            "additionalContext" : "lineHash=f05a31e3e5906d8b8ce625ca8608bd3ad9d301a6a6239a9bf4794d69d8542be1;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "02cceb92-8859-4c36-9b19-465abdfd5a32",
+      "name" : "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 86,
+            "offset" : 25,
+            "additionalContext" : "lineHash=a1c9ef128dd56925f55f9f0b37297ef3886a8302fea8d1a901289daef6c11d4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ed7a9261-4143-4c29-8bb7-6e03dbf5d77c",
+      "name" : "Crypto.Cipher.Blowfish.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 94,
+            "offset" : 23,
+            "additionalContext" : "lineHash=fbad4b5e58bde2fe769ec2df9943b79d064a46f5664eabeab4489c6ed0bac07b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "acce96e4-3326-4a22-b4ec-8f6736864089",
+      "name" : "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 96,
+            "offset" : 25,
+            "additionalContext" : "lineHash=a1c9ef128dd56925f55f9f0b37297ef3886a8302fea8d1a901289daef6c11d4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "1efdd75e-95e5-4d72-a4dd-0a4d80636e38",
+      "name" : "Crypto.Cipher.AES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 104,
+            "offset" : 18,
+            "additionalContext" : "lineHash=efc7d47aedd157ffd2f95b7e4d758dc603d7308c7252a536b249bf435a92d054;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "22e35867-4a77-40be-84f0-4996aa97296f",
+      "name" : "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 106,
+            "offset" : 25,
+            "additionalContext" : "lineHash=a1c9ef128dd56925f55f9f0b37297ef3886a8302fea8d1a901289daef6c11d4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cbc",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2f849b2e-a2a8-4746-9208-1a8e0519b0d8",
+      "name" : "Crypto.PublicKey.RSA.generate",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 117,
+            "offset" : 15,
+            "additionalContext" : "lineHash=f3461b68a8e9438de28f7377e49f37589fccf04f8634ababd3285e9edcf3235e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "90bf10ed-34f4-48b9-aae4-6b93c9f16ab3",
+      "name" : "Crypto.PublicKey.RSA.generate",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 124,
+            "offset" : 15,
+            "additionalContext" : "lineHash=e675f8838d872932440997a79a3e27af8871e1b5faba13e6bef2edb0555d4481;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0aef5b58-6b97-4458-9867-6bd93ddcbd64",
+      "name" : "Crypto.PublicKey.RSA.generate",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 131,
+            "offset" : 15,
+            "additionalContext" : "lineHash=9619a63aaeb9e861212c32395cd5ee1684fdeb6560f01f8989200233ccc9e3d4;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ae2439b0-197a-4b3a-9b7b-7b46d74dd95e",
+      "name" : "Crypto.Hash.SHA256.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 138,
+            "offset" : 16,
+            "additionalContext" : "lineHash=b4052582d020c34c56efa505b9b49e0370645dff6ea31ca39d8f63065d249f3a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ec69b0df-3c7c-41b1-b22d-dbcfb91c89db",
+      "name" : "Crypto.Signature.pkcs1_15.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 139,
+            "offset" : 26,
+            "additionalContext" : "lineHash=6f7a698da6c006bf08673b0c13ada30ed1809c4fffd545f9b97c0d38b283e7bb;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f65abc63-63c9-4dfb-bfc8-5d3380b4cb14",
+      "name" : "Crypto.Signature.pkcs1_15.PKCS115_SigScheme.sign",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 139,
+            "offset" : 43,
+            "additionalContext" : "lineHash=6f7a698da6c006bf08673b0c13ada30ed1809c4fffd545f9b97c0d38b283e7bb;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "82f1da2f-40f5-4f8d-b560-980cffca93fc",
+      "name" : "Crypto.PublicKey.DSA.generate",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 146,
+            "offset" : 15,
+            "additionalContext" : "lineHash=4bea4fb8d5488f68055ad4518173dd50897c4779b98a1c4d8c6066505a90bb17;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2e557367-9897-4ede-afd6-3ec568edd8a4",
+      "name" : "Crypto.Hash.SHA256.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 153,
+            "offset" : 16,
+            "additionalContext" : "lineHash=b4052582d020c34c56efa505b9b49e0370645dff6ea31ca39d8f63065d249f3a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3e9623da-a486-42bc-9f93-e40cf5155c9e",
+      "name" : "Crypto.Signature.DSS.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 154,
+            "offset" : 18,
+            "additionalContext" : "lineHash=fd10a48e556d22d8c1dfd14a99f9cf44b52346d9f886327c50f0abb621981043;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "913a7aba-7a0a-4548-88ff-354352f28aea",
+      "name" : "Crypto.Signature.DSS.DssSigScheme.sign",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 155,
+            "offset" : 24,
+            "additionalContext" : "lineHash=d6b4bdcf161a7a85679dc412a8bfa569ec5c4860e968eca42fe8aa66322e53d6;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "794f3ba7-1b3d-4e53-bbcb-b9b751458d1a",
+      "name" : "Crypto.PublicKey.ECC.generate",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 162,
+            "offset" : 15,
+            "additionalContext" : "lineHash=e03c1f165afd52defdb394c0dc84cacea15c9b85907caf84c0a76d4ea2d34c83;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "curve" : "other/Curve448",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f354a3f9-d80b-41ae-bc0b-42f5a8635e6d",
+      "name" : "Crypto.PublicKey.ECC.generate",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 169,
+            "offset" : 15,
+            "additionalContext" : "lineHash=f1e0ac9c45a0f806bb89d4ebb912236a72599c06d80b970e48ffd3e0f77d763f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "curve" : "other/Curve448",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ee0d1a41-7532-4a71-b0a0-1df25190ec8a",
+      "name" : "Crypto.Hash.SHA256.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 176,
+            "offset" : 16,
+            "additionalContext" : "lineHash=b4052582d020c34c56efa505b9b49e0370645dff6ea31ca39d8f63065d249f3a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "27b4f9a7-803e-4f04-a2fc-b491b152f019",
+      "name" : "Crypto.Signature.DSS.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 177,
+            "offset" : 18,
+            "additionalContext" : "lineHash=fd10a48e556d22d8c1dfd14a99f9cf44b52346d9f886327c50f0abb621981043;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "939dc919-b963-40ee-bbd1-b731dd060c58",
+      "name" : "Crypto.Signature.DSS.DssSigScheme.sign",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 178,
+            "offset" : 24,
+            "additionalContext" : "lineHash=d6b4bdcf161a7a85679dc412a8bfa569ec5c4860e968eca42fe8aa66322e53d6;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c2787ef0-b8ba-46a0-8b57-459b3e3eccf0",
+      "name" : "Crypto.Cipher.AES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 230,
+            "offset" : 18,
+            "additionalContext" : "lineHash=173de6874f47e1712d9705cb0ee3e97835fc09650006f4cf5db4c29446c7f527;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2bf926e9-2e2d-4997-846f-b2ac9392b66b",
+      "name" : "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 232,
+            "offset" : 25,
+            "additionalContext" : "lineHash=a1c9ef128dd56925f55f9f0b37297ef3886a8302fea8d1a901289daef6c11d4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cbc",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "593b4156-c0e5-40cd-95c0-6ec56f369d0f",
+      "name" : "Crypto.Cipher.DES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 265,
+            "offset" : 18,
+            "additionalContext" : "lineHash=72479c1c8e907951c0b5c4fba9d51d0b63f78730149027dd944b8eaa16f1a532;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fb0d8df3-61bb-4487-ac9a-b94292de0083",
+      "name" : "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+            "line" : 267,
+            "offset" : 25,
+            "additionalContext" : "lineHash=a1c9ef128dd56925f55f9f0b37297ef3886a8302fea8d1a901289daef6c11d4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3dcbeff0-b0cd-4a37-9b99-0e4636b3310d",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 52,
+            "offset" : 14,
+            "additionalContext" : "lineHash=2f2f2b1c7d7f6e4328738d5f2533d4c20eb6559031a51919d7fd828619e8b6c6;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "704a6911-a3b7-42f2-bc47-89bcc957d94e",
+      "name" : "crypto.rsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 60,
+            "offset" : 25,
+            "additionalContext" : "lineHash=dbb286a3147016e81de94a92d65f00a3e8de9197947974182a0a966cb3858ad8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.3.6.1.4.1.53675.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "682ea8d5-6725-49fa-a5ef-1806800758b7",
+      "name" : "crypto.sha256.Sum256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 66,
+            "offset" : 19,
+            "additionalContext" : "lineHash=e1fe994b20ead7018f54bf9cfe57533d3acb3e73d2846b69808ed3ff359a5fba;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "cbff5ef0-d6a1-456e-97db-ffb5fb557502",
+      "name" : "crypto.rsa.SignPKCS1v15",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 67,
+            "offset" : 24,
+            "additionalContext" : "lineHash=84ddccffafb65f26ab47fc06bd781e8135e626460cc6d451598a2a7ac8b484ad;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "1.3.14.3.2.11"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "65eefc4e-55f6-45e6-a13a-ef37806a64a2",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 104,
+            "offset" : 14,
+            "additionalContext" : "lineHash=acf08f754b774b409fc5d0e3caf781e49d082f47149d3d5bb98c0dcbf1a5b6a8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d08f6bfe-375a-48ce-91a9-67bccef47f05",
+      "name" : "crypto.sha1.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 110,
+            "offset" : 15,
+            "additionalContext" : "lineHash=02569e33341d4bf7dc91149db1f0bff9ea9367857435d179be6585c7aa7dfbae;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "498c2ca5-b06c-4c9c-a824-a1d1985ce4fa",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 134,
+            "offset" : 14,
+            "additionalContext" : "lineHash=d91001b6e5a1db9fe55da04e40621b6bc555595eb8ed78b89f3ac261a6a60e05;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c774244b-e173-414a-90b6-0b28f56a7a5b",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 152,
+            "offset" : 14,
+            "additionalContext" : "lineHash=558f95a7510b8e0aa4d756a6da78571b62543b19b950d810280d2ad555f72bb4;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7c4c16f2-8ec4-4ffa-832f-dcfbbcae3038",
+      "name" : "crypto.sha1.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 158,
+            "offset" : 15,
+            "additionalContext" : "lineHash=d7632830ba698afc45a40be1fa3a98c119a972f2bfe2b185a475858ed9bce6f1;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0169339b-6294-4aa1-90f3-9c6038d420e8",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 166,
+            "offset" : 14,
+            "additionalContext" : "lineHash=4da0755156563b7c631f90c179192dd196ac43836156021e9c94160d64d55275;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f36ca9c7-93ca-418a-b74f-2db2d8982c39",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 186,
+            "offset" : 14,
+            "additionalContext" : "lineHash=d91001b6e5a1db9fe55da04e40621b6bc555595eb8ed78b89f3ac261a6a60e05;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c812785e-7048-4bf8-906c-b372127fc6d2",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 261,
+            "offset" : 14,
+            "additionalContext" : "lineHash=d91001b6e5a1db9fe55da04e40621b6bc555595eb8ed78b89f3ac261a6a60e05;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f44ad79d-3b9a-4173-8ca5-d541d1fa4b47",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 304,
+            "offset" : 14,
+            "additionalContext" : "lineHash=9f7819d67f1f8f5f4e4871e8f04e9f916edbe2c0f72a92197c1af1f48a307733;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fd5232d8-645f-45cc-9413-596bcbf9e665",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 317,
+            "offset" : 14,
+            "additionalContext" : "lineHash=a59b10e79f3b2f2b8843a92dbc37068e43ec3a01db480edeb35d168401a3eb88;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "314674ed-6ec1-4c34-bd4f-5f2e6c8b5bd4",
+      "name" : "crypto.sha1.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 323,
+            "offset" : 15,
+            "additionalContext" : "lineHash=b5d4cb48f687ef9ffb3f494fe194ecc3b7907f78cf97a8572b52ee46f65faf76;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d5f5f13c-feeb-4416-8c00-820a96f453b0",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+            "line" : 338,
+            "offset" : 14,
+            "additionalContext" : "lineHash=d91001b6e5a1db9fe55da04e40621b6bc555595eb8ed78b89f3ac261a6a60e05;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d769cda6-dcd0-4032-be7c-b65e1c03f3f5",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 38,
+            "offset" : 14,
+            "additionalContext" : "lineHash=b42509cf8e50b67bc2333acaa16472ed79b326c52f69641f1a40bb3bf09b513c;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a1d24523-a350-4f01-84ff-11401072c695",
+      "name" : "crypto.sha1.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 44,
+            "offset" : 15,
+            "additionalContext" : "lineHash=f8019a3c939cebfeab29503b87bc017d45393f2a7af1593922b2eb7779a819f1;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e82b6c0f-e619-48c5-963d-b614faa1659d",
+      "name" : "crypto.md5.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 50,
+            "offset" : 14,
+            "additionalContext" : "lineHash=67224ee3e59da94da2d3b5141ae1530e8ae05280bd7ed53ee8b44ededdfe3397;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "14bee0af-10c3-4e7a-ba7b-2e11b94ddd3b",
+      "name" : "crypto.sha1.Sum",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 56,
+            "offset" : 15,
+            "additionalContext" : "lineHash=b35e2f5ebdd710318655c6ab083a6e3bef9cd4136ed567e3bb12cdb3c5fd9bf4;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.3.14.3.2.18"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "52668b24-601a-47e2-a63b-3370a00268a4",
+      "name" : "crypto.des.NewCipher",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 66,
+            "offset" : 20,
+            "additionalContext" : "lineHash=c476211b060b098b988699a50357fedba04af79a473d50e780319fdd34c97ddc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "4f8ee920-9c48-48af-9370-ac8da632d509",
+      "name" : "crypto.des.NewTripleDESCipher",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 82,
+            "offset" : 20,
+            "additionalContext" : "lineHash=572f30ee38a578c531bbe46242962770b4441788bd327fd88a079f691a578645;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        },
+        "oid" : "1.3.36.3.1.3"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7b659e7e-9290-48b2-b1ec-945fa7177819",
+      "name" : "crypto.rc4.NewCipher",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 98,
+            "offset" : 21,
+            "additionalContext" : "lineHash=ea7de00630d81765b170c752bc82f7b7adfcd3d483e3c2b11d521999c3efd011;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "stream-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "bd850efd-c375-4292-8e6b-509b884997b2",
+      "name" : "crypto.aes.NewCipher",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 111,
+            "offset" : 20,
+            "additionalContext" : "lineHash=e04f164dce6aad408037d7d0b0157274aa6295ea978dd68ab89d65b7e703412f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "07feba86-2a43-4578-9982-c1fa70e0045d",
+      "name" : "crypto.cipher.Block.Encrypt",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 119,
+            "offset" : 9,
+            "additionalContext" : "lineHash=85d246664f95c103ff67ed5ed20e1f1c202f837bf5b9284b8e4f99bbffe752b3;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "cfa9033e-e4b9-4e96-88ce-344afd0c15dd",
+      "name" : "crypto.aes.NewCipher",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 127,
+            "offset" : 20,
+            "additionalContext" : "lineHash=e04f164dce6aad408037d7d0b0157274aa6295ea978dd68ab89d65b7e703412f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "5a4fae57-f8df-4a73-b6de-6338d952e413",
+      "name" : "crypto.cipher.NewCFBEncrypter",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 134,
+            "offset" : 19,
+            "additionalContext" : "lineHash=aa940db29379c3f8e69c9b79977557686b63028ef43608e6ab92204e490c3b6d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cfb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "614bd420-e1f8-471c-8055-dab4c370fc00",
+      "name" : "crypto.cipher.Stream.XORKeyStream",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 137,
+            "offset" : 9,
+            "additionalContext" : "lineHash=a8ccbdeaf203e580cfb31a5bdd20bfbf170059d10b6acfee5c8d9c55212eac08;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "615063ee-19d6-4728-8773-b42a3293748f",
+      "name" : "crypto.rsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 148,
+            "offset" : 13,
+            "additionalContext" : "lineHash=06409c026c5f4cb1ca800a892c052f45a358868081de0605dee0840860bd5b5a;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.3.6.1.4.1.53675.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fffb1004-0bce-41df-8d31-538a4e4847ad",
+      "name" : "crypto.rsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 153,
+            "offset" : 13,
+            "additionalContext" : "lineHash=2326ec7c091922ae2afa9a87724b9475ffdac5e096f97411b26a4a8251406e4d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.3.6.1.4.1.53675.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "54b1fd98-7291-4f50-b16a-90107c518af0",
+      "name" : "crypto.rsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 158,
+            "offset" : 13,
+            "additionalContext" : "lineHash=d5c296e38dde5f34c76e1f06a42a32be64a21b1349952112d8f4847d5be6d301;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.3.6.1.4.1.53675.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "472b32aa-551a-40fb-a8d9-369615d31cd9",
+      "name" : "crypto.sha256.Sum256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 163,
+            "offset" : 19,
+            "additionalContext" : "lineHash=e901bbab1f8a9c1357fa2dcf8b0e37bfa046cca6b03fb77b6a7dc13086aa37ea;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "6cad9196-f9a7-4c32-a6f0-195cb7e17b76",
+      "name" : "crypto.rsa.SignPKCS1v15",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 164,
+            "offset" : 24,
+            "additionalContext" : "lineHash=c475878d4a4d043879c756adb81e10a08437be7ae1b84a7c90d5ad7e1ab4267e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "1.3.14.3.2.11"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "4b7e1bce-fc65-403e-8387-577a5b9aeb2e",
+      "name" : "crypto.dsa.GenerateParameters",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 175,
+            "offset" : 16,
+            "additionalContext" : "lineHash=ea6c6f51d80957a374b9d664a2ca549bcc5f8118903d426daa8f7b6535a7326c;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e4154082-7270-41cf-b05a-06d5d5553ddb",
+      "name" : "crypto.dsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 181,
+            "offset" : 16,
+            "additionalContext" : "lineHash=9c7e344a665ad0e5f78ae60a4ebf75f681120bdfbbba16f07b36587fa54d4b26;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3e3a3564-434d-4d98-9a8d-3c13eee5361f",
+      "name" : "crypto.sha256.Sum256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 190,
+            "offset" : 19,
+            "additionalContext" : "lineHash=e901bbab1f8a9c1357fa2dcf8b0e37bfa046cca6b03fb77b6a7dc13086aa37ea;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d07b7f9e-5332-4a42-afd1-4f975d25c5dd",
+      "name" : "crypto.dsa.Sign",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 191,
+            "offset" : 13,
+            "additionalContext" : "lineHash=9a85502e7739daa2663d0ce8958e5208a5558881819243f05eb42eef2c9ccd4f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "1.2.840.10040.4.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "01e0922e-ab8a-4ae2-a605-8564bc2c5a7f",
+      "name" : "crypto.elliptic.P256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 196,
+            "offset" : 36,
+            "additionalContext" : "lineHash=fd1f1b34a80b4f0939c8ab717ac15add46c2d94367994492ce37fc8ef69493bc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "key-agree",
+          "curve" : "nist/P-256"
+        },
+        "oid" : "1.2.840.10045.3.1.7"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9c1cac62-83d8-4f80-8359-0560476daa53",
+      "name" : "crypto.ecdsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 196,
+            "offset" : 15,
+            "additionalContext" : "lineHash=fd1f1b34a80b4f0939c8ab717ac15add46c2d94367994492ce37fc8ef69493bc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fb2b4c86-1367-4c22-a118-ccd779c36364",
+      "name" : "crypto.elliptic.P384",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 201,
+            "offset" : 36,
+            "additionalContext" : "lineHash=f39050ac16e25f12ff047510aba2432a9b8f1dcd2f179fa0e5910deb592514ce;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "key-agree",
+          "curve" : "nist/P-384"
+        },
+        "oid" : "1.3.132.0.34"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2aa038cd-2885-46aa-b47f-60295a1e5a75",
+      "name" : "crypto.ecdsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 201,
+            "offset" : 15,
+            "additionalContext" : "lineHash=f39050ac16e25f12ff047510aba2432a9b8f1dcd2f179fa0e5910deb592514ce;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "02cfe915-249b-4c00-935b-ccc5e7088320",
+      "name" : "crypto.sha256.Sum256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 206,
+            "offset" : 19,
+            "additionalContext" : "lineHash=e901bbab1f8a9c1357fa2dcf8b0e37bfa046cca6b03fb77b6a7dc13086aa37ea;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "8c431eca-7103-4f0e-a999-4b0ab4850a4b",
+      "name" : "crypto.ecdsa.Sign",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 207,
+            "offset" : 15,
+            "additionalContext" : "lineHash=9f1eee8560a8cc0cca88b7ced7dc8600dd83f4fc1841ef6ec5fa2e939d1f99f9;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0bed9cb1-1b7e-4265-ad8d-e561b1f94233",
+      "name" : "crypto.aes.NewCipher",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 256,
+            "offset" : 20,
+            "additionalContext" : "lineHash=acb12f0acdcd7b5de25ddb3b00f8c0cb8a5f0b041cd7bf4f25bfd90a3cd40b9c;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "4ba43e12-da80-4610-b9fe-b2d9f0509574",
+      "name" : "crypto.cipher.NewCFBEncrypter",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 261,
+            "offset" : 19,
+            "additionalContext" : "lineHash=2cefb1dbb4f6e82d5c297d11044654be2982a34602a28113d31ee70ca087691d;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cfb",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "22a5f69b-ca2a-4e1b-9ca0-e3f7c79b4ece",
+      "name" : "crypto.cipher.Stream.XORKeyStream",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 263,
+            "offset" : 9,
+            "additionalContext" : "lineHash=a8ccbdeaf203e580cfb31a5bdd20bfbf170059d10b6acfee5c8d9c55212eac08;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "350e33ab-436a-4c1b-85f3-e7fa9ad1b5e0",
+      "name" : "crypto.rsa.GenerateKey",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 275,
+            "offset" : 25,
+            "additionalContext" : "lineHash=e50314597cf0c323c0d4e040764881242bf42fac01e001799bb3e39338a10f85;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.3.6.1.4.1.53675.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f04f686e-cfe7-4fc5-86af-3be67b87b194",
+      "name" : "crypto.des.NewCipher",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+            "line" : 304,
+            "offset" : 20,
+            "additionalContext" : "lineHash=5cb0833a2d80d331a43c23243d2683010d085afeed5c40d8dd23878429433ad6;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher"
+        }
+      }
+    }
+  ],
+  "vulnerabilities" : [
+    {
+      "id" : "CWE-327",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/327.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        327
+      ],
+      "affects" : [
+        {
+          "ref" : "3dcbeff0-b0cd-4a37-9b99-0e4636b3310d"
+        },
+        {
+          "ref" : "65eefc4e-55f6-45e6-a13a-ef37806a64a2"
+        },
+        {
+          "ref" : "498c2ca5-b06c-4c9c-a824-a1d1985ce4fa"
+        },
+        {
+          "ref" : "c774244b-e173-414a-90b6-0b28f56a7a5b"
+        },
+        {
+          "ref" : "0169339b-6294-4aa1-90f3-9c6038d420e8"
+        },
+        {
+          "ref" : "f36ca9c7-93ca-418a-b74f-2db2d8982c39"
+        },
+        {
+          "ref" : "c812785e-7048-4bf8-906c-b372127fc6d2"
+        },
+        {
+          "ref" : "f44ad79d-3b9a-4173-8ca5-d541d1fa4b47"
+        },
+        {
+          "ref" : "fd5232d8-645f-45cc-9413-596bcbf9e665"
+        },
+        {
+          "ref" : "d5f5f13c-feeb-4416-8c00-820a96f453b0"
+        },
+        {
+          "ref" : "d769cda6-dcd0-4032-be7c-b65e1c03f3f5"
+        },
+        {
+          "ref" : "e82b6c0f-e619-48c5-963d-b614faa1659d"
+        },
+        {
+          "ref" : "704a6911-a3b7-42f2-bc47-89bcc957d94e"
+        },
+        {
+          "ref" : "615063ee-19d6-4728-8773-b42a3293748f"
+        },
+        {
+          "ref" : "fffb1004-0bce-41df-8d31-538a4e4847ad"
+        },
+        {
+          "ref" : "54b1fd98-7291-4f50-b16a-90107c518af0"
+        },
+        {
+          "ref" : "350e33ab-436a-4c1b-85f3-e7fa9ad1b5e0"
+        },
+        {
+          "ref" : "cbff5ef0-d6a1-456e-97db-ffb5fb557502"
+        },
+        {
+          "ref" : "6cad9196-f9a7-4c32-a6f0-195cb7e17b76"
+        },
+        {
+          "ref" : "d08f6bfe-375a-48ce-91a9-67bccef47f05"
+        },
+        {
+          "ref" : "7c4c16f2-8ec4-4ffa-832f-dcfbbcae3038"
+        },
+        {
+          "ref" : "314674ed-6ec1-4c34-bd4f-5f2e6c8b5bd4"
+        },
+        {
+          "ref" : "a1d24523-a350-4f01-84ff-11401072c695"
+        },
+        {
+          "ref" : "14bee0af-10c3-4e7a-ba7b-2e11b94ddd3b"
+        },
+        {
+          "ref" : "d08f6bfe-375a-48ce-91a9-67bccef47f05"
+        },
+        {
+          "ref" : "7c4c16f2-8ec4-4ffa-832f-dcfbbcae3038"
+        },
+        {
+          "ref" : "314674ed-6ec1-4c34-bd4f-5f2e6c8b5bd4"
+        },
+        {
+          "ref" : "a1d24523-a350-4f01-84ff-11401072c695"
+        },
+        {
+          "ref" : "14bee0af-10c3-4e7a-ba7b-2e11b94ddd3b"
+        },
+        {
+          "ref" : "52668b24-601a-47e2-a63b-3370a00268a4"
+        },
+        {
+          "ref" : "f04f686e-cfe7-4fc5-86af-3be67b87b194"
+        },
+        {
+          "ref" : "4f8ee920-9c48-48af-9370-ac8da632d509"
+        },
+        {
+          "ref" : "7b659e7e-9290-48b2-b1ec-945fa7177819"
+        },
+        {
+          "ref" : "4b7e1bce-fc65-403e-8387-577a5b9aeb2e"
+        },
+        {
+          "ref" : "e4154082-7270-41cf-b05a-06d5d5553ddb"
+        },
+        {
+          "ref" : "d07b7f9e-5332-4a42-afd1-4f975d25c5dd"
+        },
+        {
+          "ref" : "9c1cac62-83d8-4f80-8359-0560476daa53"
+        },
+        {
+          "ref" : "2aa038cd-2885-46aa-b47f-60295a1e5a75"
+        },
+        {
+          "ref" : "8c431eca-7103-4f0e-a999-4b0ab4850a4b"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-328",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/328.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        328
+      ],
+      "affects" : [
+        {
+          "ref" : "3dcbeff0-b0cd-4a37-9b99-0e4636b3310d"
+        },
+        {
+          "ref" : "65eefc4e-55f6-45e6-a13a-ef37806a64a2"
+        },
+        {
+          "ref" : "498c2ca5-b06c-4c9c-a824-a1d1985ce4fa"
+        },
+        {
+          "ref" : "c774244b-e173-414a-90b6-0b28f56a7a5b"
+        },
+        {
+          "ref" : "0169339b-6294-4aa1-90f3-9c6038d420e8"
+        },
+        {
+          "ref" : "f36ca9c7-93ca-418a-b74f-2db2d8982c39"
+        },
+        {
+          "ref" : "c812785e-7048-4bf8-906c-b372127fc6d2"
+        },
+        {
+          "ref" : "f44ad79d-3b9a-4173-8ca5-d541d1fa4b47"
+        },
+        {
+          "ref" : "fd5232d8-645f-45cc-9413-596bcbf9e665"
+        },
+        {
+          "ref" : "d5f5f13c-feeb-4416-8c00-820a96f453b0"
+        },
+        {
+          "ref" : "d769cda6-dcd0-4032-be7c-b65e1c03f3f5"
+        },
+        {
+          "ref" : "e82b6c0f-e619-48c5-963d-b614faa1659d"
+        },
+        {
+          "ref" : "704a6911-a3b7-42f2-bc47-89bcc957d94e"
+        },
+        {
+          "ref" : "615063ee-19d6-4728-8773-b42a3293748f"
+        },
+        {
+          "ref" : "fffb1004-0bce-41df-8d31-538a4e4847ad"
+        },
+        {
+          "ref" : "54b1fd98-7291-4f50-b16a-90107c518af0"
+        },
+        {
+          "ref" : "350e33ab-436a-4c1b-85f3-e7fa9ad1b5e0"
+        },
+        {
+          "ref" : "cbff5ef0-d6a1-456e-97db-ffb5fb557502"
+        },
+        {
+          "ref" : "6cad9196-f9a7-4c32-a6f0-195cb7e17b76"
+        },
+        {
+          "ref" : "d08f6bfe-375a-48ce-91a9-67bccef47f05"
+        },
+        {
+          "ref" : "7c4c16f2-8ec4-4ffa-832f-dcfbbcae3038"
+        },
+        {
+          "ref" : "314674ed-6ec1-4c34-bd4f-5f2e6c8b5bd4"
+        },
+        {
+          "ref" : "a1d24523-a350-4f01-84ff-11401072c695"
+        },
+        {
+          "ref" : "14bee0af-10c3-4e7a-ba7b-2e11b94ddd3b"
+        },
+        {
+          "ref" : "d08f6bfe-375a-48ce-91a9-67bccef47f05"
+        },
+        {
+          "ref" : "7c4c16f2-8ec4-4ffa-832f-dcfbbcae3038"
+        },
+        {
+          "ref" : "314674ed-6ec1-4c34-bd4f-5f2e6c8b5bd4"
+        },
+        {
+          "ref" : "a1d24523-a350-4f01-84ff-11401072c695"
+        },
+        {
+          "ref" : "14bee0af-10c3-4e7a-ba7b-2e11b94ddd3b"
+        },
+        {
+          "ref" : "52668b24-601a-47e2-a63b-3370a00268a4"
+        },
+        {
+          "ref" : "f04f686e-cfe7-4fc5-86af-3be67b87b194"
+        },
+        {
+          "ref" : "4f8ee920-9c48-48af-9370-ac8da632d509"
+        },
+        {
+          "ref" : "7b659e7e-9290-48b2-b1ec-945fa7177819"
+        },
+        {
+          "ref" : "4b7e1bce-fc65-403e-8387-577a5b9aeb2e"
+        },
+        {
+          "ref" : "e4154082-7270-41cf-b05a-06d5d5553ddb"
+        },
+        {
+          "ref" : "d07b7f9e-5332-4a42-afd1-4f975d25c5dd"
+        },
+        {
+          "ref" : "9c1cac62-83d8-4f80-8359-0560476daa53"
+        },
+        {
+          "ref" : "2aa038cd-2885-46aa-b47f-60295a1e5a75"
+        },
+        {
+          "ref" : "8c431eca-7103-4f0e-a999-4b0ab4850a4b"
+        }
+      ]
+    }
+  ]
+}

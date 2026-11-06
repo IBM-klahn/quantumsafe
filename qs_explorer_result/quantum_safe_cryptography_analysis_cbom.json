@@ -1,0 +1,1873 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:eec1d045f3174b5f8fe623c265f49e14",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-04T16:02:09Z",
+    "tools" : {
+      "services" : [
+        {
+          "provider" : {
+            "name" : "IBM Corporation."
+          },
+          "name" : "IBM Quantum Safe Explorer",
+          "version" : "2.3.3.1"
+        }
+      ]
+    },
+    "component" : {
+      "type" : "application",
+      "name" : "",
+      "version" : ""
+    },
+    "properties" : [
+      {
+        "name" : "language",
+        "value" : "java"
+      },
+      {
+        "name" : "gitUrl",
+        "value" : ""
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "db0eb415-ce9d-442b-8657-da16372987af",
+      "name" : "FFDH-ffdhe1024",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 142,
+            "offset" : 52,
+            "additionalContext" : "getInstance(\"DH\");lineHash=5d023ff7f6bad968d2853f6e40e1c222c7dd64e04a52ae831c12d07f0ed0c941;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "key-agree",
+          "parameterSetIdentifier" : "1024",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0c8a62df-50ee-4261-b61e-9db32e8bf5c3",
+      "name" : "keygen-RSA-512",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 97,
+            "offset" : 52,
+            "additionalContext" : "getInstance(\"RSA\");lineHash=559afc32a7f03857ce3443ae2fa8c5b55a93f37f0a9ed2fd5fc51240ba73d12f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "parameterSetIdentifier" : "512",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "27bcdb69-911e-4fa9-8dac-ee68928dbf26",
+      "name" : "Blowfish-64",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 80,
+            "offset" : 44,
+            "additionalContext" : "getInstance(\"Blowfish\");lineHash=f7369ac6608a9c7165c428147e355fb605d92a9ddbe15d9698a49e04c28b5315;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "64",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d3bc07ad-e448-40be-8348-f770e1910ec4",
+      "name" : "keygen-RSA-1024",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 106,
+            "offset" : 52,
+            "additionalContext" : "getInstance(\"RSA\");lineHash=559afc32a7f03857ce3443ae2fa8c5b55a93f37f0a9ed2fd5fc51240ba73d12f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "parameterSetIdentifier" : "1024",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "766665a6-a199-4c6e-bcc2-c010b3e6a8f7",
+      "name" : "keygen-RSA-1024",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 67,
+            "offset" : 52,
+            "additionalContext" : "getInstance(\"RSA\");lineHash=730be8982b0369227e21d27cdddb93df56320e1f1a44599bceea1eab877f0d88;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "parameterSetIdentifier" : "1024",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9e7c1f48-3406-41d0-a33f-5ea0439e37fe",
+      "name" : "AES-128-ECB-pkcs5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 155,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"AES/ECB/PKCS5Padding\");lineHash=ae5813aeef8ece5c2fa82b5c8fce6dfacf8654ff9520cd062eab989896bf384b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "128",
+          "mode" : "ecb",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "90a51de1-a4eb-490a-b87b-f9abfc522b0e",
+      "name" : "AES-128-ECB-pkcs5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 60,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"AES/ECB/PKCS5Padding\");lineHash=673f49ae02d7545a33a21d80985a3729e863a93750d23260095fe3af87231519;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "128",
+          "mode" : "ecb",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "4bd3ed76-aabf-4cc3-b398-a1d7c40843fd",
+      "name" : "AES-128-ECB-pkcs5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 322,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"AES/ECB/PKCS5Padding\");lineHash=ae5813aeef8ece5c2fa82b5c8fce6dfacf8654ff9520cd062eab989896bf384b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "128",
+          "mode" : "ecb",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "4b2b5ff0-a108-48e3-9ab6-2c894bea58b5",
+      "name" : "PBES1-DES-MD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 183,
+            "offset" : 56,
+            "additionalContext" : "getInstance(\"PBEWithMD5AndDES\");lineHash=bdd51ea0495f8d508761836356e7027605b567317b113065b1c846575eb77fef;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "kdf",
+          "cryptoFunctions" : [
+            "keyderive"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "04f88f93-0652-4196-a41e-657db8a68ab4",
+      "name" : "PBES1-3DES-SHA-1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 196,
+            "offset" : 56,
+            "additionalContext" : "getInstance(\"PBEWithSHA1AndDESede\");lineHash=8eec60c31c9eac9d03108c0da23fd39d8f2b06550cc41d18172ee95d7d18a82c;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "kdf",
+          "cryptoFunctions" : [
+            "keyderive"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "253224f0-6de1-4ddd-9815-f65efab7163f",
+      "name" : "Hash_DRBG-SHA-256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 48,
+            "offset" : 13,
+            "additionalContext" : "SecureRandom();lineHash=0d9a5eec1bb2d03fe9879787be05e2f1800b08bd88b626223214b491fe641496;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "drbg",
+          "cryptoFunctions" : [
+            "generate"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c1c99d30-8423-4b0b-bc92-10664224d9b0",
+      "name" : "Hash_DRBG-SHA-256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 278,
+            "offset" : 52,
+            "additionalContext" : "SecureRandom();lineHash=94f8b4d701ad08ef3cbe20e033fb0d656fd54b45eb8806f1da1cd62aaa34515b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "drbg",
+          "cryptoFunctions" : [
+            "generate"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "cd146af8-2083-4daa-9247-45132bd890b2",
+      "name" : "MD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 23,
+            "offset" : 42,
+            "additionalContext" : "getInstance(\"MD5\");lineHash=823ca5216c831e9e732d66099352978df3132e36fac61b8acc6a11023f25209e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "parameterSetIdentifier" : "128",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "fab6500c-e3d9-4b2a-87cd-73054895f7b7",
+      "name" : "MD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 32,
+            "offset" : 42,
+            "additionalContext" : "getInstance(\"MD5\");lineHash=0dcc71a5219bb5db23d53011ec136344a499e02ac23fa53f0e760505cb4e23a5;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "parameterSetIdentifier" : "128",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.113549.2.5"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "3e9dc708-e352-4682-ace4-310dd3152541",
+      "name" : "RSA-PKCS1-1.5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 173,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"RSA/ECB/PKCS1Padding\");lineHash=ab442af44e534b8510fabe4a113076dfe84e778effd15f0bc2b74aa5d397f375;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "padding" : "pkcs1v15",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d1f8b9cd-cff6-4ed1-9787-c31f6b396627",
+      "name" : "RSA-PKCS1-1.5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 130,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"RSA/ECB/PKCS1Padding\");lineHash=ac8431c329e2eac80c4c99a4ae51a4ad78603b23c410eb008bda2829b9d3e9fc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "padding" : "pkcs1v15",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "c62ec5d1-02b6-4939-9dbe-c90e329699b2",
+      "name" : "Blowfish-64",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 84,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"Blowfish\");lineHash=e5a323ae48fd5c3a6bdc0fe431f9c5dcee736f7dd00cd6f0e5bb8883ed6bdfdf;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "64",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "884fd035-b0b8-4325-ac12-d6d141b27b51",
+      "name" : "DSA-SHA-256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 81,
+            "offset" : 41,
+            "additionalContext" : "getInstance(\"SHA256withDSA\");lineHash=080fb1470c6e436f8e9822a5820662c1ff88bdbcbbd7522c16005b33746bcf7b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "2.16.840.1.101.3.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "031c820c-ac8e-4a75-a392-646127e64ed2",
+      "name" : "AES",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 164,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"AES\");lineHash=47ffe33ba6c05f9ed15b3d9b8a10206a3675b16411f0f3610b6b10b09cf9c633;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "09a353be-90ad-45db-814e-5426189124d5",
+      "name" : "RC2",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 60,
+            "offset" : 37,
+            "additionalContext" : "SecretKeySpec(key, \"RC2\");lineHash=3db75bb85cda33a8eca7126d3d12bed8bbfde991b765f22e006320cf9241d3da;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "92f00692-ac8f-4bef-938a-5961ebedc96e",
+      "name" : "AES-128",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 56,
+            "offset" : 44,
+            "additionalContext" : "getInstance(\"AES\");lineHash=444a25d765c948171039dc266c123cabcea806791867301f27278c06189bf8ab;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "128",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "674509f2-cc37-4356-8d59-406fce239db8",
+      "name" : "AES-128",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 115,
+            "offset" : 44,
+            "additionalContext" : "getInstance(\"AES\");lineHash=048dec1caf0b35b3d98f1275f712728f2916e729407fcbbffa5772255a706e7c;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "128",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "40198aed-63e2-40d4-b95a-ee44c8ce2cbc",
+      "name" : "Blowfish-128",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 119,
+            "offset" : 44,
+            "additionalContext" : "getInstance(\"Blowfish\");lineHash=b8f2ec9bf72e228d3798371b62249c591481860a4273210f6e422026d03d7649;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "128",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "41a71e3a-dd03-486e-9753-865137276782",
+      "name" : "DES-ECB",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 51,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"DES/ECB/PKCS5Padding\");lineHash=ecbd76c56898fbeefb78b2a193e880d5b48de8445ddc89aae562b5fae964c0f7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "ee229c9e-447c-4948-843b-217362f4aa6e",
+      "name" : "AES-ECB-pkcs5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 137,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"AES/ECB/PKCS5Padding\");lineHash=673f49ae02d7545a33a21d80985a3729e863a93750d23260095fe3af87231519;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "8227f357-3fb8-4df3-aa33-64f8f700a1bb",
+      "name" : "DES-ECB",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 38,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"DES/ECB/PKCS5Padding\");lineHash=ecd3f826c51af1f33c873405b1b8aaa6053f7fd2eb06f8ebe212fc11acc4fea7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "ecb",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "9d1bdccb-f34f-4e35-a484-5d235fc0e684",
+      "name" : "keygen-256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 91,
+            "offset" : 23,
+            "additionalContext" : "generateKeyPair();lineHash=4598fd77136785f63e89c40b190ed997921c6e03d1653ea1675929515a29f601;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "parameterSetIdentifier" : "256",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "28b78767-19d6-4c39-8b8d-d94a56ae706f",
+      "name" : "initialization-vector@28b78767-19d6-4c39-8b8d-d94a56ae706f",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 49,
+            "offset" : 38,
+            "additionalContext" : "IvParameterSpec(iv);lineHash=cbc8b5808d6cd2f77f9718bd43253dd19860447b82d497bc825711d7b3534952;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "initialization-vector",
+          "size" : 64
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "aa244d7a-f46f-4141-aadb-254ea85f2239",
+      "name" : "initialization-vector@aa244d7a-f46f-4141-aadb-254ea85f2239",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 212,
+            "offset" : 38,
+            "additionalContext" : "IvParameterSpec(staticIV);lineHash=8a9db25969554b192e14d2783f2a6344180823189d7fd603b59348c69ccd4bda;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "initialization-vector",
+          "size" : 128
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "036da742-6d8f-427a-a9e5-ab977a9dc8e7",
+      "name" : "initialization-vector@036da742-6d8f-427a-a9e5-ab977a9dc8e7",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 146,
+            "offset" : 38,
+            "additionalContext" : "IvParameterSpec(staticIV);lineHash=86c896a0ef5c4925db5aa79d0ac7559cb32b2368e91c483cca8e336f241df1a4;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "initialization-vector",
+          "size" : 128
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "aa6bb3c3-7be3-4307-83c7-3b03147274cf",
+      "name" : "Blowfish-128",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 119,
+            "offset" : 44,
+            "additionalContext" : "getInstance(\"Blowfish\");lineHash=b8f2ec9bf72e228d3798371b62249c591481860a4273210f6e422026d03d7649;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "128",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "bbafbe87-6d7a-47ce-9884-667edb403a68",
+      "name" : "RSA-PKCS1-1.5-SHA-256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 153,
+            "offset" : 41,
+            "additionalContext" : "getInstance(\"SHA256withRSA\");lineHash=27ae9a32224ad9078999ebb954609eef77e02ef50557919cbf889702bace0912;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "padding" : "pkcs1v15",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "1.2.840.113549.1.1.11"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d8c3fb71-bff8-4de1-8515-dcf2060bcb3b",
+      "name" : "FFDH-ffdhe2048",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 104,
+            "offset" : 52,
+            "additionalContext" : "getInstance(\"DH\");lineHash=d039a46be58d2934cde57971de8c2d7d42376f91dd2a30906efd12a892936bb4;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "key-agree",
+          "parameterSetIdentifier" : "2048",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0bb95581-aa9f-4812-abef-d72a5b30f757",
+      "name" : "keygen-160",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 135,
+            "offset" : 23,
+            "additionalContext" : "generateKeyPair();lineHash=1ac95a7f6722179d88ff18dd3cc3d68c09927ffb0ad244b0349de530d5e8ff4e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "parameterSetIdentifier" : "160",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d691b5e2-0eb0-46f3-826a-531a4ceda254",
+      "name" : "secret-key@d691b5e2-0eb0-46f3-826a-531a4ceda254",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 60,
+            "offset" : 37,
+            "additionalContext" : "SecretKeySpec(key, \"RC2\");lineHash=3db75bb85cda33a8eca7126d3d12bed8bbfde991b765f22e006320cf9241d3da;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "0b21c4e8-3491-4161-8890-21dcb556ff79",
+      "name" : "secret-key@0b21c4e8-3491-4161-8890-21dcb556ff79",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 45,
+            "offset" : 39,
+            "additionalContext" : "SecretKeySpec(keyBytes, \"DESede\");lineHash=05ca50f467f840e88ab82b3cf161537a84db3d9f5465683ecafed7dea755f0e5;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "86644b65-475b-4b0b-9a77-0168f91fc487",
+      "name" : "secret-key@86644b65-475b-4b0b-9a77-0168f91fc487",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 70,
+            "offset" : 37,
+            "additionalContext" : "SecretKeySpec(key, \"ARCFOUR\");lineHash=9f52f1c8c4b90510708b23339cf8026a1a92e51b4910b5c6973da83a386ee1c9;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d8205efd-6555-4faf-a81c-54db7688fa04",
+      "name" : "secret-key@d8205efd-6555-4faf-a81c-54db7688fa04",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 111,
+            "offset" : 39,
+            "additionalContext" : "SecretKeySpec(key, \"RC4\");lineHash=57723376ba960bc8f565cb60eeba594723eb305673152309e153e8558356a38f;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7fa8b5c9-0e18-4884-91fa-f1d946a28d51",
+      "name" : "secret-key@7fa8b5c9-0e18-4884-91fa-f1d946a28d51",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 50,
+            "offset" : 37,
+            "additionalContext" : "SecretKeySpec(key, \"DES\");lineHash=6d049ec4e6cebc6cbbd6ad72f268b70207bd4dfb26b7fc107eced2569fa3d8fc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7ba72020-eb81-48cd-8d4a-003c803a05df",
+      "name" : "secret-key@7ba72020-eb81-48cd-8d4a-003c803a05df",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 37,
+            "offset" : 39,
+            "additionalContext" : "SecretKeySpec(key.getBytes(), \"DES\");lineHash=0ca42bf6cf8f460dac53e074a982a33ee139c04c868cb1cca7cf01b600ab3bd8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "00547b3b-ef3e-470a-b9b0-874fefd9f6a0",
+      "name" : "ECDSA-SHA-256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 96,
+            "offset" : 41,
+            "additionalContext" : "getInstance(\"SHA256withECDSA\");lineHash=3fa04911af4f7c26ea14467e6a5caeccfe3c407c9a32f0650bb86959857a25ed;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "sign"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "59e06bb7-18eb-4ebf-b4e1-9a5b9afb78bf",
+      "name" : "keygen-RSA-2048",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 74,
+            "offset" : 52,
+            "additionalContext" : "getInstance(\"RSA\");lineHash=730be8982b0369227e21d27cdddb93df56320e1f1a44599bceea1eab877f0d88;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "parameterSetIdentifier" : "2048",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "53a9c69a-5318-4fe0-b01f-3e6bb6d8b70b",
+      "name" : "generate",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 271,
+            "offset" : 16,
+            "additionalContext" : "nextBytes(randomBytes);lineHash=7bbb41622f3e174cb9f82c5ef6cac6fcd169f78702e07bf1f7068d06bdfe5343;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "cryptoFunctions" : [
+            "generate"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a8b58d0d-00b6-4d41-a558-e4dd36e3e720",
+      "name" : "secret-key@a8b58d0d-00b6-4d41-a558-e4dd36e3e720",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 309,
+            "offset" : 37,
+            "additionalContext" : "SecretKeySpec(key, \"DES\");lineHash=6d049ec4e6cebc6cbbd6ad72f268b70207bd4dfb26b7fc107eced2569fa3d8fc;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key",
+          "size" : 64
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7d2edf0e-42b7-4d50-a0cb-fcd0b6a4a63a",
+      "name" : "secret-key@7d2edf0e-42b7-4d50-a0cb-fcd0b6a4a63a",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 321,
+            "offset" : 37,
+            "additionalContext" : "SecretKeySpec(hardcodedKeyBytes, \"AES\");lineHash=47fb95dabf6be51bf4b44b7f000e341bc745dd309457c482e2a43471c6cb1251;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "secret-key",
+          "size" : 128
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "75433464-81b9-413b-8f97-0847fa08fcf1",
+      "name" : "3DES-CBC",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 46,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"DESede/CBC/PKCS5Padding\");lineHash=3a3545cf9fe5f42493700daa772aefd52b3bd3ab8d0f7ba858a5a9e7ed4e6974;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cbc",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d494e6ba-ec99-4eca-9e22-1b856b4f92b1",
+      "name" : "AES-CBC-pkcs5-128",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 208,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"AES/CBC/PKCS5Padding\");lineHash=7b3680f6ae21ef83c0b43d14a6d61d01c51528b3e65b3b9aae8be5fc2cefef02;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cbc",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d572e3d1-23f4-425f-8a93-32c1fb2a93a6",
+      "name" : "AES-CBC-pkcs5-128",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 144,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"AES/CBC/PKCS5Padding\");lineHash=3b4f4eb5cc7c482c11e43aa167ccacf3ac61feefb11524b40ecfead2f521a8d7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "mode" : "cbc",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "36b2897e-6aa7-4f0b-8414-979dfef130dd",
+      "name" : "password@36b2897e-6aa7-4f0b-8414-979dfef130dd",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 182,
+            "offset" : 34,
+            "additionalContext" : "PBEKeySpec(password);lineHash=66ed8220d1065020f259f10de69394339ecbfb339b76e5109867e8a0e44ab6f1;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "password"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "18918aa6-c584-4204-bd89-1e2fed575eb4",
+      "name" : "password@18918aa6-c584-4204-bd89-1e2fed575eb4",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 195,
+            "offset" : 34,
+            "additionalContext" : "PBEKeySpec(password);lineHash=66ed8220d1065020f259f10de69394339ecbfb339b76e5109867e8a0e44ab6f1;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "password"
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "bddb14bf-b44e-4827-a04a-842dd5f78287",
+      "name" : "RC4",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 71,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"ARCFOUR\");lineHash=a595b69c84b990208a616b1bf6440cc3f4297deb8fb294ec835dadb8c99f2bf8;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "stream-cipher",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "b1088f6d-7042-48c1-a350-ec1e094297b3",
+      "name" : "RC4",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 112,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"RC4\");lineHash=f349e5a770eeb5f8abad02a8915a324568ebf611585b271129de07794eeaac10;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "stream-cipher",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "77521a70-a0ce-4716-8447-34de1f3167e7",
+      "name" : "DSA-1024",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 124,
+            "offset" : 52,
+            "additionalContext" : "getInstance(\"DSA\");lineHash=ca1e8d250d37d2e1724b6994d13a6fb8f011cf2c00ec54934e4d97106f36898e;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "parameterSetIdentifier" : "1024",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "43d99fd4-2b79-41ff-ae89-8d93cb24824d",
+      "name" : "DES-64-ECB",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 310,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"DES/ECB/PKCS5Padding\");lineHash=ecbd76c56898fbeefb78b2a193e880d5b48de8445ddc89aae562b5fae964c0f7;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "block-cipher",
+          "parameterSetIdentifier" : "64",
+          "mode" : "ecb",
+          "padding" : "pkcs5",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "266cadfb-9d42-4184-a8e8-4d86256fc8fa",
+      "name" : "PBES1-DES-MD5",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 186,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"PBEWithMD5AndDES\");lineHash=2772e1e890b9dc1589a1ebcfd636d4eb9a49801818b1e90bf6505a93e725d572;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "other",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e172cafa-ceac-4550-b10d-765d6e02910d",
+      "name" : "PBES1-3DES-SHA-1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 199,
+            "offset" : 32,
+            "additionalContext" : "getInstance(\"PBEWithSHA1AndDESede\");lineHash=c7fd9fcf69230f3b938781af9db9cb6afdb9bffe758d82ca686f468a99caf9d5;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "other",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        }
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "200f1312-87f6-470f-96dc-f1572ebfb039",
+      "name" : "SHA-1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/VulnerableCryptoExample.java",
+            "line" : 30,
+            "offset" : 42,
+            "additionalContext" : "getInstance(\"SHA-1\");lineHash=e5504af59a69b4c652fab93d6af365bae739abfef219077cb02604d2fd46dca6;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "parameterSetIdentifier" : "160",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.3.14.3.2.26"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "234a30f4-d608-4578-ade4-c3aec5e01441",
+      "name" : "SHA-1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "/qse-samples/sample_files/java_files/WeakCryptoVulnerabilities.java",
+            "line" : 41,
+            "offset" : 42,
+            "additionalContext" : "getInstance(\"SHA1\");lineHash=da9673f66eccf6aea14a1ed51fb8168bc8a1858d9ca50e20862374f8b4720d9b;"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "parameterSetIdentifier" : "160",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.3.14.3.2.26"
+      }
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "75433464-81b9-413b-8f97-0847fa08fcf1",
+      "dependsOn" : [
+        "0b21c4e8-3491-4161-8890-21dcb556ff79",
+        "28b78767-19d6-4c39-8b8d-d94a56ae706f"
+      ]
+    },
+    {
+      "ref" : "d494e6ba-ec99-4eca-9e22-1b856b4f92b1",
+      "dependsOn" : [
+        "aa244d7a-f46f-4141-aadb-254ea85f2239"
+      ]
+    },
+    {
+      "ref" : "09a353be-90ad-45db-814e-5426189124d5",
+      "dependsOn" : [
+        "d691b5e2-0eb0-46f3-826a-531a4ceda254"
+      ]
+    },
+    {
+      "ref" : "e172cafa-ceac-4550-b10d-765d6e02910d",
+      "dependsOn" : [
+        "18918aa6-c584-4204-bd89-1e2fed575eb4"
+      ]
+    },
+    {
+      "ref" : "43d99fd4-2b79-41ff-ae89-8d93cb24824d",
+      "dependsOn" : [
+        "a8b58d0d-00b6-4d41-a558-e4dd36e3e720"
+      ]
+    },
+    {
+      "ref" : "04f88f93-0652-4196-a41e-657db8a68ab4",
+      "dependsOn" : [
+        "3bc21f0d-935b-4556-b5d9-34a4e2e96305"
+      ]
+    },
+    {
+      "ref" : "266cadfb-9d42-4184-a8e8-4d86256fc8fa",
+      "dependsOn" : [
+        "36b2897e-6aa7-4f0b-8414-979dfef130dd"
+      ]
+    },
+    {
+      "ref" : "8227f357-3fb8-4df3-aa33-64f8f700a1bb",
+      "dependsOn" : [
+        "7ba72020-eb81-48cd-8d4a-003c803a05df"
+      ]
+    },
+    {
+      "ref" : "4b2b5ff0-a108-48e3-9ab6-2c894bea58b5",
+      "dependsOn" : [
+        "08d431ca-969b-4475-9b69-5c3a47e6590a"
+      ]
+    },
+    {
+      "ref" : "b1088f6d-7042-48c1-a350-ec1e094297b3",
+      "dependsOn" : [
+        "d8205efd-6555-4faf-a81c-54db7688fa04"
+      ]
+    },
+    {
+      "ref" : "bddb14bf-b44e-4827-a04a-842dd5f78287",
+      "dependsOn" : [
+        "86644b65-475b-4b0b-9a77-0168f91fc487"
+      ]
+    },
+    {
+      "ref" : "41a71e3a-dd03-486e-9753-865137276782",
+      "dependsOn" : [
+        "7fa8b5c9-0e18-4884-91fa-f1d946a28d51"
+      ]
+    },
+    {
+      "ref" : "4bd3ed76-aabf-4cc3-b398-a1d7c40843fd",
+      "dependsOn" : [
+        "7d2edf0e-42b7-4d50-a0cb-fcd0b6a4a63a"
+      ]
+    },
+    {
+      "ref" : "d572e3d1-23f4-425f-8a93-32c1fb2a93a6",
+      "dependsOn" : [
+        "036da742-6d8f-427a-a9e5-ab977a9dc8e7"
+      ]
+    }
+  ],
+  "vulnerabilities" : [
+    {
+      "id" : "CWE-321",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/321.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        321
+      ],
+      "affects" : [
+        {
+          "ref" : "d572e3d1-23f4-425f-8a93-32c1fb2a93a6"
+        },
+        {
+          "ref" : "d494e6ba-ec99-4eca-9e22-1b856b4f92b1"
+        },
+        {
+          "ref" : "4bd3ed76-aabf-4cc3-b398-a1d7c40843fd"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-326",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/326.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        326
+      ],
+      "affects" : [
+        {
+          "ref" : "766665a6-a199-4c6e-bcc2-c010b3e6a8f7"
+        },
+        {
+          "ref" : "0c8a62df-50ee-4261-b61e-9db32e8bf5c3"
+        },
+        {
+          "ref" : "db0eb415-ce9d-442b-8657-da16372987af"
+        },
+        {
+          "ref" : "d3bc07ad-e448-40be-8348-f770e1910ec4"
+        },
+        {
+          "ref" : "77521a70-a0ce-4716-8447-34de1f3167e7"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-327",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/327.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        327
+      ],
+      "affects" : [
+        {
+          "ref" : "27bcdb69-911e-4fa9-8dac-ee68928dbf26"
+        },
+        {
+          "ref" : "40198aed-63e2-40d4-b95a-ee44c8ce2cbc"
+        },
+        {
+          "ref" : "aa6bb3c3-7be3-4307-83c7-3b03147274cf"
+        },
+        {
+          "ref" : "41a71e3a-dd03-486e-9753-865137276782"
+        },
+        {
+          "ref" : "09a353be-90ad-45db-814e-5426189124d5"
+        },
+        {
+          "ref" : "fab6500c-e3d9-4b2a-87cd-73054895f7b7"
+        },
+        {
+          "ref" : "234a30f4-d608-4578-ade4-c3aec5e01441"
+        },
+        {
+          "ref" : "8227f357-3fb8-4df3-aa33-64f8f700a1bb"
+        },
+        {
+          "ref" : "bbafbe87-6d7a-47ce-9884-667edb403a68"
+        },
+        {
+          "ref" : "59e06bb7-18eb-4ebf-b4e1-9a5b9afb78bf"
+        },
+        {
+          "ref" : "3e9dc708-e352-4682-ace4-310dd3152541"
+        },
+        {
+          "ref" : "90a51de1-a4eb-490a-b87b-f9abfc522b0e"
+        },
+        {
+          "ref" : "4bd3ed76-aabf-4cc3-b398-a1d7c40843fd"
+        },
+        {
+          "ref" : "9e7c1f48-3406-41d0-a33f-5ea0439e37fe"
+        },
+        {
+          "ref" : "75433464-81b9-413b-8f97-0847fa08fcf1"
+        },
+        {
+          "ref" : "b1088f6d-7042-48c1-a350-ec1e094297b3"
+        },
+        {
+          "ref" : "d1f8b9cd-cff6-4ed1-9787-c31f6b396627"
+        },
+        {
+          "ref" : "c62ec5d1-02b6-4939-9dbe-c90e329699b2"
+        },
+        {
+          "ref" : "d8c3fb71-bff8-4de1-8515-dcf2060bcb3b"
+        },
+        {
+          "ref" : "766665a6-a199-4c6e-bcc2-c010b3e6a8f7"
+        },
+        {
+          "ref" : "00547b3b-ef3e-470a-b9b0-874fefd9f6a0"
+        },
+        {
+          "ref" : "cd146af8-2083-4daa-9247-45132bd890b2"
+        },
+        {
+          "ref" : "ee229c9e-447c-4948-843b-217362f4aa6e"
+        },
+        {
+          "ref" : "0c8a62df-50ee-4261-b61e-9db32e8bf5c3"
+        },
+        {
+          "ref" : "bddb14bf-b44e-4827-a04a-842dd5f78287"
+        },
+        {
+          "ref" : "884fd035-b0b8-4325-ac12-d6d141b27b51"
+        },
+        {
+          "ref" : "200f1312-87f6-470f-96dc-f1572ebfb039"
+        },
+        {
+          "ref" : "db0eb415-ce9d-442b-8657-da16372987af"
+        },
+        {
+          "ref" : "d3bc07ad-e448-40be-8348-f770e1910ec4"
+        },
+        {
+          "ref" : "43d99fd4-2b79-41ff-ae89-8d93cb24824d"
+        },
+        {
+          "ref" : "77521a70-a0ce-4716-8447-34de1f3167e7"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-328",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/328.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        328
+      ],
+      "affects" : [
+        {
+          "ref" : "e172cafa-ceac-4550-b10d-765d6e02910d"
+        },
+        {
+          "ref" : "fab6500c-e3d9-4b2a-87cd-73054895f7b7"
+        },
+        {
+          "ref" : "234a30f4-d608-4578-ade4-c3aec5e01441"
+        },
+        {
+          "ref" : "266cadfb-9d42-4184-a8e8-4d86256fc8fa"
+        },
+        {
+          "ref" : "04f88f93-0652-4196-a41e-657db8a68ab4"
+        },
+        {
+          "ref" : "4b2b5ff0-a108-48e3-9ab6-2c894bea58b5"
+        },
+        {
+          "ref" : "cd146af8-2083-4daa-9247-45132bd890b2"
+        },
+        {
+          "ref" : "200f1312-87f6-470f-96dc-f1572ebfb039"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-338",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/338.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        338
+      ],
+      "affects" : [
+        {
+          "ref" : "43d99fd4-2b79-41ff-ae89-8d93cb24824d"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-759",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/759.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "low"
+        }
+      ],
+      "cwes" : [
+        759
+      ],
+      "affects" : [
+        {
+          "ref" : "fab6500c-e3d9-4b2a-87cd-73054895f7b7"
+        },
+        {
+          "ref" : "234a30f4-d608-4578-ade4-c3aec5e01441"
+        },
+        {
+          "ref" : "cd146af8-2083-4daa-9247-45132bd890b2"
+        },
+        {
+          "ref" : "200f1312-87f6-470f-96dc-f1572ebfb039"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-780",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/780.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        780
+      ],
+      "affects" : [
+        {
+          "ref" : "3e9dc708-e352-4682-ace4-310dd3152541"
+        },
+        {
+          "ref" : "d1f8b9cd-cff6-4ed1-9787-c31f6b396627"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-916",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/916.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        916
+      ],
+      "affects" : [
+        {
+          "ref" : "e172cafa-ceac-4550-b10d-765d6e02910d"
+        },
+        {
+          "ref" : "266cadfb-9d42-4184-a8e8-4d86256fc8fa"
+        },
+        {
+          "ref" : "04f88f93-0652-4196-a41e-657db8a68ab4"
+        },
+        {
+          "ref" : "4b2b5ff0-a108-48e3-9ab6-2c894bea58b5"
+        }
+      ]
+    },
+    {
+      "id" : "CWE-1204",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/1204.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        1204
+      ],
+      "affects" : [
+        {
+          "ref" : "aa6bb3c3-7be3-4307-83c7-3b03147274cf"
+        },
+        {
+          "ref" : "09a353be-90ad-45db-814e-5426189124d5"
+        },
+        {
+          "ref" : "c62ec5d1-02b6-4939-9dbe-c90e329699b2"
+        },
+        {
+          "ref" : "031c820c-ac8e-4a75-a392-646127e64ed2"
+        }
+      ]
+    }
+  ]
+}

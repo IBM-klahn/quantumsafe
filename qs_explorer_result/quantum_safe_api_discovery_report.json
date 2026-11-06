@@ -1,0 +1,2028 @@
+{
+    "children": [
+        {
+            "file_type": "Go",
+            "findings": [
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:52",
+                    "id": "0"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:60",
+                    "id": "1"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha256.Sum256",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:66",
+                    "id": "2"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rsa.SignPKCS1v15",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:67",
+                    "id": "3"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:104",
+                    "id": "4"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha1.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:110",
+                    "id": "5"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:134",
+                    "id": "6"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:152",
+                    "id": "7"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha1.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:158",
+                    "id": "8"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:166",
+                    "id": "9"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:186",
+                    "id": "10"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:261",
+                    "id": "11"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:304",
+                    "id": "12"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:317",
+                    "id": "13"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha1.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:323",
+                    "id": "14"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go",
+                    "Parent": "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go:338",
+                    "id": "15"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:38",
+                    "id": "16"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha1.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:44",
+                    "id": "17"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.md5.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:50",
+                    "id": "18"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha1.Sum",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:56",
+                    "id": "19"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.des.NewCipher",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:66",
+                    "id": "20"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.des.NewTripleDESCipher",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:82",
+                    "id": "21"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rc4.NewCipher",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:98",
+                    "id": "22"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.aes.NewCipher",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:111",
+                    "id": "23"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.cipher.Block.Encrypt",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:119",
+                    "id": "24"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.aes.NewCipher",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:127",
+                    "id": "25"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.cipher.NewCFBEncrypter",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:134",
+                    "id": "26"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.cipher.Stream.XORKeyStream",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:137",
+                    "id": "27"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:148",
+                    "id": "28"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:153",
+                    "id": "29"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:158",
+                    "id": "30"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha256.Sum256",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:163",
+                    "id": "31"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rsa.SignPKCS1v15",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:164",
+                    "id": "32"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.dsa.GenerateParameters",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:175",
+                    "id": "33"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.dsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:181",
+                    "id": "34"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha256.Sum256",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:190",
+                    "id": "35"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.dsa.Sign",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:191",
+                    "id": "36"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.elliptic.P256",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:196",
+                    "id": "37"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.ecdsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:196",
+                    "id": "38"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.elliptic.P384",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:201",
+                    "id": "39"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.ecdsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:201",
+                    "id": "40"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.sha256.Sum256",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:206",
+                    "id": "41"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.ecdsa.Sign",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:207",
+                    "id": "42"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.aes.NewCipher",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:256",
+                    "id": "43"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.cipher.NewCFBEncrypter",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:261",
+                    "id": "44"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.cipher.Stream.XORKeyStream",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:263",
+                    "id": "45"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.rsa.GenerateKey",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:275",
+                    "id": "46"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "crypto.des.NewCipher",
+                    "Library": "crypto",
+                    "Location": "qse-samples/sample_files/golang_files/vulnerable_crypto.go",
+                    "Parent": "qse-samples/sample_files/golang_files/vulnerable_crypto.go:304",
+                    "id": "47"
+                }
+            ],
+            "statistics": {
+                "Algorithms": {},
+                "Crypto_calls": 48,
+                "Crypto_evidences": 0,
+                "Crypto_vulnerabilities": 0,
+                "External_functions": 0,
+                "Files": {
+                    "qse-samples/sample_files/golang_files/vulnerable_crypto.go": 32,
+                    "qse-samples/sample_files/golang_files/web_crypto_vulnerabilities.go": 16
+                },
+                "Files_scanned": 2,
+                "Function_calls": 287,
+                "Instances": {
+                    "crypto.aes.NewCipher": 3,
+                    "crypto.cipher.Block.Encrypt": 1,
+                    "crypto.cipher.NewCFBEncrypter": 2,
+                    "crypto.cipher.Stream.XORKeyStream": 2,
+                    "crypto.des.NewCipher": 2,
+                    "crypto.des.NewTripleDESCipher": 1,
+                    "crypto.dsa.GenerateKey": 1,
+                    "crypto.dsa.GenerateParameters": 1,
+                    "crypto.dsa.Sign": 1,
+                    "crypto.ecdsa.GenerateKey": 2,
+                    "crypto.ecdsa.Sign": 1,
+                    "crypto.elliptic.P256": 1,
+                    "crypto.elliptic.P384": 1,
+                    "crypto.md5.Sum": 12,
+                    "crypto.rc4.NewCipher": 1,
+                    "crypto.rsa.GenerateKey": 5,
+                    "crypto.rsa.SignPKCS1v15": 2,
+                    "crypto.sha1.Sum": 5,
+                    "crypto.sha256.Sum256": 4
+                },
+                "Libraries": {
+                    "crypto": 48
+                },
+                "Lines_scanned": 493,
+                "Methods_scanned": 30
+            }
+        },
+        {
+            "file_type": "cpp",
+            "findings": [
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "MD5",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:31",
+                    "id": "0"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "SHA1",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:44",
+                    "id": "1"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "MD5",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:57",
+                    "id": "2"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_set_key_unchecked",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:76",
+                    "id": "3"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_ecb_encrypt",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:83",
+                    "id": "4"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_set_key_unchecked",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:101",
+                    "id": "5"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_set_key_unchecked",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:102",
+                    "id": "6"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_set_key_unchecked",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:103",
+                    "id": "7"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_ecb3_encrypt",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:110",
+                    "id": "8"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RC4_set_key",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:125",
+                    "id": "9"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RC4",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:128",
+                    "id": "10"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_CIPHER_CTX_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:144",
+                    "id": "11"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_EncryptInit_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:146",
+                    "id": "12"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_aes_128_ecb",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:146",
+                    "id": "13"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_EncryptFinal_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:154",
+                    "id": "14"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_CIPHER_CTX_free",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:157",
+                    "id": "15"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_CIPHER_CTX_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:173",
+                    "id": "16"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_EncryptInit_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:174",
+                    "id": "17"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_aes_128_cbc",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:174",
+                    "id": "18"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_EncryptFinal_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:182",
+                    "id": "19"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_CIPHER_CTX_free",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:185",
+                    "id": "20"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:201",
+                    "id": "21"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_generate_key_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:206",
+                    "id": "22"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_size",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:208",
+                    "id": "23"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:218",
+                    "id": "24"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_generate_key_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:223",
+                    "id": "25"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_size",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:225",
+                    "id": "26"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:235",
+                    "id": "27"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_generate_key_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:240",
+                    "id": "28"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_size",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:242",
+                    "id": "29"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DSA_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:252",
+                    "id": "30"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DSA_generate_parameters_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:255",
+                    "id": "31"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DSA_generate_key",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:256",
+                    "id": "32"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DSA_free",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:260",
+                    "id": "33"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EC_KEY_generate_key",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:268",
+                    "id": "34"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EC_KEY_generate_key",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:280",
+                    "id": "35"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_CIPHER_CTX_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:342",
+                    "id": "36"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_EncryptInit_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:343",
+                    "id": "37"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_aes_128_cbc",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:343",
+                    "id": "38"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_EncryptFinal_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:351",
+                    "id": "39"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "EVP_CIPHER_CTX_free",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:354",
+                    "id": "40"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_new",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:370",
+                    "id": "41"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "RSA_generate_key_ex",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:375",
+                    "id": "42"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_set_key_unchecked",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:404",
+                    "id": "43"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "DES_ecb_encrypt",
+                    "Library": "openSSL",
+                    "Location": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp",
+                    "Parent": "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp:410",
+                    "id": "44"
+                }
+            ],
+            "statistics": {
+                "Algorithms": {},
+                "Crypto_calls": 45,
+                "Crypto_evidences": 0,
+                "Crypto_vulnerabilities": 0,
+                "External_functions": 0,
+                "Files": {
+                    "qse-samples/sample_files/cpp_files/openssl_vulnerabilities.cpp": 45
+                },
+                "Files_scanned": 1,
+                "Function_calls": 0,
+                "Instances": {
+                    "DES_ecb3_encrypt": 1,
+                    "DES_ecb_encrypt": 2,
+                    "DES_set_key_unchecked": 5,
+                    "DSA_free": 1,
+                    "DSA_generate_key": 1,
+                    "DSA_generate_parameters_ex": 1,
+                    "DSA_new": 1,
+                    "EC_KEY_generate_key": 2,
+                    "EVP_CIPHER_CTX_free": 3,
+                    "EVP_CIPHER_CTX_new": 3,
+                    "EVP_EncryptFinal_ex": 3,
+                    "EVP_EncryptInit_ex": 3,
+                    "EVP_aes_128_cbc": 2,
+                    "EVP_aes_128_ecb": 1,
+                    "MD5": 2,
+                    "RC4": 1,
+                    "RC4_set_key": 1,
+                    "RSA_generate_key_ex": 4,
+                    "RSA_new": 4,
+                    "RSA_size": 3,
+                    "SHA1": 1
+                },
+                "Libraries": {
+                    "openSSL": 45
+                },
+                "Lines_scanned": 266,
+                "Methods_scanned": 21
+            }
+        },
+        {
+            "file_type": "C#",
+            "findings": [
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:75",
+                    "id": "0"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HMACMD5.HMACMD5",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:120",
+                    "id": "1"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:122",
+                    "id": "2"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HMACSHA1.HMACSHA1",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:132",
+                    "id": "3"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:134",
+                    "id": "4"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:163",
+                    "id": "5"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:165",
+                    "id": "6"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:190",
+                    "id": "7"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:192",
+                    "id": "8"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SHA1.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:202",
+                    "id": "9"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:204",
+                    "id": "10"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:216",
+                    "id": "11"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:218",
+                    "id": "12"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:245",
+                    "id": "13"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:247",
+                    "id": "14"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:346",
+                    "id": "15"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:348",
+                    "id": "16"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:394",
+                    "id": "17"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:397",
+                    "id": "18"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:425",
+                    "id": "19"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs:427",
+                    "id": "20"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:26",
+                    "id": "21"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:28",
+                    "id": "22"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SHA1.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:38",
+                    "id": "23"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:40",
+                    "id": "24"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.MD5.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:50",
+                    "id": "25"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:52",
+                    "id": "26"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SHA1.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:62",
+                    "id": "27"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:64",
+                    "id": "28"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.DES.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:78",
+                    "id": "29"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:84",
+                    "id": "30"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:87",
+                    "id": "31"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.TripleDES.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:98",
+                    "id": "32"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:104",
+                    "id": "33"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:107",
+                    "id": "34"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.RC2.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:118",
+                    "id": "35"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:124",
+                    "id": "36"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:127",
+                    "id": "37"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.Aes.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:138",
+                    "id": "38"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:144",
+                    "id": "39"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:147",
+                    "id": "40"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.Aes.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:158",
+                    "id": "41"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:166",
+                    "id": "42"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:169",
+                    "id": "43"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:184",
+                    "id": "44"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:193",
+                    "id": "45"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:202",
+                    "id": "46"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.RSA.SignData",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:212",
+                    "id": "47"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.DSACryptoServiceProvider.DSACryptoServiceProvider",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:221",
+                    "id": "48"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.DSA.SignData",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:231",
+                    "id": "49"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ECDsaCng.ECDsaCng",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:240",
+                    "id": "50"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ECDsa.SignData",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:250",
+                    "id": "51"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.Aes.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:314",
+                    "id": "52"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:321",
+                    "id": "53"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:324",
+                    "id": "54"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.Aes.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:339",
+                    "id": "55"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.GenerateKey",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:342",
+                    "id": "56"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.DES.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:352",
+                    "id": "57"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.GenerateKey",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:354",
+                    "id": "58"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HMACMD5.HMACMD5",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:368",
+                    "id": "59"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:370",
+                    "id": "60"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HMACSHA1.HMACSHA1",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:380",
+                    "id": "61"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.HashAlgorithm.ComputeHash",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:382",
+                    "id": "62"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.DES.Create",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:406",
+                    "id": "63"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:412",
+                    "id": "64"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock",
+                    "Library": "Cryptography",
+                    "Location": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs",
+                    "Parent": "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs:415",
+                    "id": "65"
+                }
+            ],
+            "statistics": {
+                "Algorithms": {},
+                "Crypto_calls": 66,
+                "Crypto_evidences": 0,
+                "Crypto_vulnerabilities": 0,
+                "External_functions": 0,
+                "Files": {
+                    "qse-samples/sample_files/csharp_files/VulnerableCrypto.cs": 45,
+                    "qse-samples/sample_files/csharp_files/WebCryptoVulnerabilities.cs": 21
+                },
+                "Files_scanned": 2,
+                "Function_calls": 265,
+                "Instances": {
+                    "System.Security.Cryptography.Aes.Create": 4,
+                    "System.Security.Cryptography.DES.Create": 3,
+                    "System.Security.Cryptography.DSA.SignData": 1,
+                    "System.Security.Cryptography.DSACryptoServiceProvider.DSACryptoServiceProvider": 1,
+                    "System.Security.Cryptography.ECDsa.SignData": 1,
+                    "System.Security.Cryptography.ECDsaCng.ECDsaCng": 1,
+                    "System.Security.Cryptography.HMACMD5.HMACMD5": 2,
+                    "System.Security.Cryptography.HMACSHA1.HMACSHA1": 2,
+                    "System.Security.Cryptography.HashAlgorithm.ComputeHash": 16,
+                    "System.Security.Cryptography.ICryptoTransform.TransformFinalBlock": 7,
+                    "System.Security.Cryptography.MD5.Create": 9,
+                    "System.Security.Cryptography.RC2.Create": 1,
+                    "System.Security.Cryptography.RSA.SignData": 1,
+                    "System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider": 4,
+                    "System.Security.Cryptography.SHA1.Create": 3,
+                    "System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor": 7,
+                    "System.Security.Cryptography.SymmetricAlgorithm.GenerateKey": 2,
+                    "System.Security.Cryptography.TripleDES.Create": 1
+                },
+                "Libraries": {
+                    "Cryptography": 66
+                },
+                "Lines_scanned": 630,
+                "Methods_scanned": 55
+            }
+        },
+        {
+            "file_type": "kotlin",
+            "findings": [],
+            "statistics": {
+                "Algorithms": {},
+                "Crypto_calls": 0,
+                "Crypto_evidences": 0,
+                "Crypto_vulnerabilities": 0,
+                "External_functions": 0,
+                "Files": {},
+                "Files_scanned": 0,
+                "Function_calls": 0,
+                "Instances": {},
+                "Libraries": {},
+                "Lines_scanned": 0,
+                "Methods_scanned": 0
+            }
+        },
+        {
+            "file_type": "nodejs",
+            "findings": [],
+            "statistics": {
+                "Algorithms": {},
+                "Crypto_calls": 0,
+                "Crypto_evidences": 0,
+                "Crypto_vulnerabilities": 0,
+                "External_functions": 0,
+                "Files": {},
+                "Files_scanned": 0,
+                "Function_calls": 0,
+                "Instances": {},
+                "Libraries": {},
+                "Lines_scanned": 0,
+                "Methods_scanned": 0
+            }
+        },
+        {
+            "file_type": "py",
+            "findings": [
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:30",
+                    "id": "0"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:30",
+                    "id": "1"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.sha1",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:36",
+                    "id": "2"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:36",
+                    "id": "3"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hmac.new",
+                    "Library": "hmac",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:65",
+                    "id": "4"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hmac.HMAC.hexdigest",
+                    "Library": "hmac",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:69",
+                    "id": "5"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hmac.new",
+                    "Library": "hmac",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:73",
+                    "id": "6"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hmac.HMAC.hexdigest",
+                    "Library": "hmac",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:77",
+                    "id": "7"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:134",
+                    "id": "8"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:134",
+                    "id": "9"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:187",
+                    "id": "10"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:187",
+                    "id": "11"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:201",
+                    "id": "12"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:201",
+                    "id": "13"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:229",
+                    "id": "14"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:229",
+                    "id": "15"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:276",
+                    "id": "16"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py",
+                    "Parent": "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py:276",
+                    "id": "17"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.Hash",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:17",
+                    "id": "18"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.SHA256",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:17",
+                    "id": "19"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.Hash",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:18",
+                    "id": "20"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.SHA256",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:18",
+                    "id": "21"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.Hash.update",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:21",
+                    "id": "22"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.Hash.update",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:22",
+                    "id": "23"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.Hash.finalize",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:25",
+                    "id": "24"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "cryptography.hazmat.primitives.hashes.Hash.finalize",
+                    "Library": "cryptography",
+                    "Location": "qse-samples/ibm_quantum_platform_course/sample.py",
+                    "Parent": "qse-samples/ibm_quantum_platform_course/sample.py:26",
+                    "id": "25"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:28",
+                    "id": "26"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:28",
+                    "id": "27"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.sha1",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:35",
+                    "id": "28"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:35",
+                    "id": "29"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.md5",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:42",
+                    "id": "30"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:42",
+                    "id": "31"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.sha1",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:48",
+                    "id": "32"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "hashlib.hash.hexdigest",
+                    "Library": "hashlib",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:48",
+                    "id": "33"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.DES.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:58",
+                    "id": "34"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:60",
+                    "id": "35"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.DES3.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:67",
+                    "id": "36"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:69",
+                    "id": "37"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.ARC4.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:76",
+                    "id": "38"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.AES.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:84",
+                    "id": "39"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:86",
+                    "id": "40"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.Blowfish.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:94",
+                    "id": "41"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:96",
+                    "id": "42"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.AES.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:104",
+                    "id": "43"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:106",
+                    "id": "44"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.PublicKey.RSA.generate",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:117",
+                    "id": "45"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.PublicKey.RSA.generate",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:124",
+                    "id": "46"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.PublicKey.RSA.generate",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:131",
+                    "id": "47"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Hash.SHA256.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:138",
+                    "id": "48"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Signature.pkcs1_15.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:139",
+                    "id": "49"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Signature.pkcs1_15.PKCS115_SigScheme.sign",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:139",
+                    "id": "50"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.PublicKey.DSA.generate",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:146",
+                    "id": "51"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Hash.SHA256.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:153",
+                    "id": "52"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Signature.DSS.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:154",
+                    "id": "53"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Signature.DSS.DssSigScheme.sign",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:155",
+                    "id": "54"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.PublicKey.ECC.generate",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:162",
+                    "id": "55"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.PublicKey.ECC.generate",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:169",
+                    "id": "56"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Hash.SHA256.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:176",
+                    "id": "57"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Signature.DSS.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:177",
+                    "id": "58"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Signature.DSS.DssSigScheme.sign",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:178",
+                    "id": "59"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.AES.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:230",
+                    "id": "60"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:232",
+                    "id": "61"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher.DES.new",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:265",
+                    "id": "62"
+                },
+                {
+                    "Asset_Type": "algorithm",
+                    "Function_Name": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+                    "Library": "Crypto",
+                    "Location": "qse-samples/sample_files/python_files/vulnerable_crypto.py",
+                    "Parent": "qse-samples/sample_files/python_files/vulnerable_crypto.py:267",
+                    "id": "63"
+                }
+            ],
+            "statistics": {
+                "Algorithms": {},
+                "Crypto_calls": 64,
+                "Crypto_evidences": 0,
+                "Crypto_vulnerabilities": 0,
+                "External_functions": 0,
+                "Files": {
+                    "qse-samples/ibm_quantum_platform_course/sample.py": 8,
+                    "qse-samples/sample_files/python_files/vulnerable_crypto.py": 38,
+                    "qse-samples/sample_files/python_files/web_crypto_vulnerabilities.py": 18
+                },
+                "Files_scanned": 4,
+                "Function_calls": 174,
+                "Instances": {
+                    "Crypto.Cipher.AES.new": 3,
+                    "Crypto.Cipher.ARC4.new": 1,
+                    "Crypto.Cipher.Blowfish.new": 1,
+                    "Crypto.Cipher.DES.new": 2,
+                    "Crypto.Cipher.DES3.new": 1,
+                    "Crypto.Cipher._mode_cbc.CbcMode.encrypt": 2,
+                    "Crypto.Cipher._mode_ecb.EcbMode.encrypt": 5,
+                    "Crypto.Hash.SHA256.new": 3,
+                    "Crypto.PublicKey.DSA.generate": 1,
+                    "Crypto.PublicKey.ECC.generate": 2,
+                    "Crypto.PublicKey.RSA.generate": 3,
+                    "Crypto.Signature.DSS.DssSigScheme.sign": 2,
+                    "Crypto.Signature.DSS.new": 2,
+                    "Crypto.Signature.pkcs1_15.PKCS115_SigScheme.sign": 1,
+                    "Crypto.Signature.pkcs1_15.new": 1,
+                    "cryptography.hazmat.primitives.hashes.Hash": 2,
+                    "cryptography.hazmat.primitives.hashes.Hash.finalize": 2,
+                    "cryptography.hazmat.primitives.hashes.Hash.update": 2,
+                    "cryptography.hazmat.primitives.hashes.SHA256": 2,
+                    "hashlib.hash.hexdigest": 11,
+                    "hashlib.md5": 8,
+                    "hashlib.sha1": 3,
+                    "hmac.HMAC.hexdigest": 2,
+                    "hmac.new": 2
+                },
+                "Libraries": {
+                    "Crypto": 30,
+                    "cryptography": 8,
+                    "hashlib": 22,
+                    "hmac": 4
+                },
+                "Lines_scanned": 381,
+                "Methods_scanned": 61
+            }
+        },
+        {
+            "file_type": "java",
+            "findings": [],
+            "statistics": {
+                "Algorithms": {},
+                "Crypto_calls": 0,
+                "Crypto_evidences": 0,
+                "Crypto_vulnerabilities": 0,
+                "External_functions": 0,
+                "Files": {},
+                "Files_scanned": 2,
+                "Function_calls": 221,
+                "Instances": {},
+                "Libraries": {},
+                "Lines_scanned": 345,
+                "Methods_scanned": 47
+            }
+        }
+    ],
+    "folderPath": "/Users/klahn/Projects/qse_demo"
+}
